@@ -28,51 +28,42 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__head">Подбор программы</h1>
+    <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="request-assistance" action="https://echo.htmlacademy.ru" method="post">
-      <p class="request-assistance__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <div class="request-assistance__main-group">
-        <h2 class="visually-hidden">Главная информация</h2>
-        <label class="request-assistance__label" for="name">Имя:<span>*</span></label>
+      <fieldset class="request-assistance__main-group">
+        <h2 class="visually-hidden">Главная информация о коте</h2>
+        <label class="request-assistance__label" for="name">Имя:*</label>
         <input class="request-assistance__input-text" type="text" id="name" name="name" placeholder="Барсик">
-        <label class="request-assistance__label" for="weight">Вес (кг):<span>*</span></label>
+        <label class="request-assistance__label" for="weight">Вес (кг):*</label>
         <input class="request-assistance__input-text" type="text" id="weight" name="weight" placeholder="7">
         <label class="request-assistance__label" for="age">Возраст (лет):</label>
         <input class="request-assistance__input-text" type="text" id="age" name="age" placeholder="7">
-      </div>
-      <div class="request-assistance__options-group">
+      </fieldset>
+      <fieldset class="request-assistance__options-group">
         <h2 class="visually-hidden">Программа</h2>
         <ul class="request-assistance__options-list">
           <li class="request-assistance__options-item">
-            <label for="slim">
-              <input class="request-assistance__options" id="slim" name="program" type="radio" value="slim" checked>
-              <span class="request-assistance__options-indicator"></span>
-              <span class="request-assistance__options-caption">Похудение</span>
-            </label>
+            <label class="request-assistance__options-label" for="slim">Похудение</label>
+            <input class="request-assistance__options" id="slim" name="program" type="radio" value="slim" checked>
           </li>
           <li class="request-assistance__options-item">
-            <label for="pro">
-              <input class="request-assistance__options" id="pro" name="program" type="radio" value="pro">
-              <span class="request-assistance__options-indicator"></span>
-              <span class="request-assistance__options-caption">Набор массы</span>
-            </label>
+            <label class="request-assistance__options-label" for="pro">Набор массы</label>
+            <input class="request-assistance__options" id="pro" name="program" type="radio" value="pro">
           </li>
           <li class="request-assistance__options-item">
-            <label for="advice">
-              <input class="request-assistance__options" id="advice" name="program" type="radio" value="advice">
-              <span class="request-assistance__options-indicator"></span>
-              <span class="request-assistance__options-caption">Не знаю (нужен ваш совет)</span>
-            </label>
+            <label class="request-assistance__options-label" for="advice">Не знаю (нужен ваш совет)"</label>
+            <input class="request-assistance__options" id="advice" name="program" type="radio" value="advice">
           </li>
         </ul>
-      </div>
+      </fieldset>
       <fieldset class="request-assistance__contacts-group">
         <legend class="request-assistance__contacts-description">
           Контактные данные (владельца кота)
         </legend>
-        <label class="request-assistance__label" for="email">E-mail:<span>*</span></label>
+        <label class="request-assistance__label" for="email">E-mail:*</label>
         <input class="request-assistance__input-text" type="email" id="email" name="email"
           placeholder="kuklachev@gmail.com">
-        <label class="request-assistance__label" for="tel">Телефон:<span>*</span></label>
+        <label class="request-assistance__label" for="tel">Телефон:*</label>
         <input class="request-assistance__input-text" type="tel" id="tel" name="tel"
           pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90">
       </fieldset>
@@ -89,45 +80,32 @@
         </legend>
         <ul class="request-assistance__extra-list">
           <li class="request-assistance__extra-item">
-            <label for="sugar" class="request-assistance__extra-description">
-              <input type="checkbox" name="sugar" id="sugar" checked>
-              <span class="request-assistance__extra-indicator"></span>
-              <span class="request-assistance__extra-caption">Сахарозаменитель</span>
-            </label>
+            <label class="request-assistance__extra-label" for="sugar">Сахарозаменитель</label>
+            <input class="request-assistance__extra-options" type="checkbox" name="sugar" id="sugar" checked>
           </li>
           <li class="request-assistance__extra-item">
-            <label for="water" class="request-assistance__extra-description">
-              <input type="checkbox" name="water" id="water">
-              <span class="request-assistance__extra-indicator"></span>
-              <span class="request-assistance__extra-caption">Питьевая вода</span>
-            </label>
+            <label class="request-assistance__extra-label" for="water">Питьевая вода</label>
+            <input class="request-assistance__extra-options" type="checkbox" name="water" id="water">
           </li>
           <li class="request-assistance__extra-item">
-            <label for="milk" class="request-assistance__extra-description">
-              <input type="checkbox" name="milk" id="milk">
-              <span class="request-assistance__extra-indicator"></span>
-              <span class="request-assistance__extra-caption">Молоко</span>
-            </label>
+            <label class="request-assistance__extra-label" for="milk">Молоко</label>
+            <input class="request-assistance__extra-options" type="checkbox" name="milk" id="milk">
           </li>
           <li class="request-assistance__extra-item">
-            <label for="vitamins" class="request-assistance__extra-description">
-              <input type="checkbox" name="vitamins" id="vitamins">
-              <span class="request-assistance__extra-indicator"></span>
-              <span class="request-assistance__extra-caption">Витамины</span>
-            </label>
+            <label class="request-assistance__extra-label" for="vitamins">Витамины</label>
+            <input class="request-assistance__extra-options" type="checkbox" name="vitamins" id="vitamins">
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="request-assistance__submit">Отправить заявку</button>
-      <p class="request-assistance__mark">
-        <span>*</span> — Обязательные поля
-      </p>
+      <button type="submit" class="request-assistance__submit button">Отправить заявку</button>
+      <p class="request-assistance__mark">* — Обязательные поля</p>
     </form>
     <section class="contacts">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="img/map.jpg" alt="Карта" width="320" height="400">
+      <img class="contacts__map" src="img/map.jpg"
+        alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="400">
     </section>
   </main>
   <footer class="page-footer">
@@ -141,14 +119,15 @@
       <li class="social-list__item">
         <a class="social-list__link social-list__link--instagram" href="#">Мы в Инстаграмме</a>
       </li>
-      <li class="social-list_item">
+      <li class="social-list__item">
         <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__title">HTML Academy</p>
-        <img class="copyright__logo" src="img/htmlacademy.svg" alt="Профессиональный онлайн‑курс HTML и CSS, уровень 2" width="27" height="34">
+        <img class="copyright__logo" src="img/htmlacademy.svg" alt="Профессиональный онлайн‑курс HTML и CSS, уровень 2"
+          width="27" height="34">
       </a>
     </div>
   </footer>
