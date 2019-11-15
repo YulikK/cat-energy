@@ -43,21 +43,25 @@
         <h2 class="visually-hidden">Программа</h2>
         <ul class="request-assistance__options-list">
           <li class="request-assistance__options-item">
-            <label class="request-assistance__options-label" for="slim">Похудение</label>
             <input class="request-assistance__options" id="slim" name="program" type="radio" value="slim" checked>
+            <label class="request-assistance__label label-modification label-modification--radio"
+              for="slim">Похудение</label>
           </li>
           <li class="request-assistance__options-item">
-            <label class="request-assistance__options-label" for="pro">Набор массы</label>
             <input class="request-assistance__options" id="pro" name="program" type="radio" value="pro">
+            <label class="request-assistance__label label-modification label-modification--radio" for="pro">Набор
+              массы</label>
           </li>
           <li class="request-assistance__options-item">
-            <label class="request-assistance__options-label" for="advice">Не знаю (нужен ваш совет)"</label>
             <input class="request-assistance__options" id="advice" name="program" type="radio" value="advice">
+            <label class="request-assistance__label label-modification label-modification--radio" for="advice">Не знаю
+              (нужен ваш
+              совет)</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="request-assistance__contacts-group">
-        <legend class="request-assistance__contacts-description">
+        <legend class="request-assistance__legend">
           Контактные данные (владельца кота)
         </legend>
         <label class="request-assistance__label" for="email">E-mail:*</label>
@@ -68,36 +72,40 @@
           pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8 (960) 900-60-90">
       </fieldset>
       <fieldset class="request-assistance__comment-group">
-        <legend class="request-assistance__comment-description">
+        <legend class="request-assistance__legend">
           Комментарий
         </legend>
         <textarea class="request-assistance__input-text" id="comment" rows="10" cols="30" name="comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="request-assistance__extra-group">
-        <legend class="request-assistance__extra-description">
+        <legend class="request-assistance__legend">
           Дополнительно
         </legend>
-        <ul class="request-assistance__extra-list">
-          <li class="request-assistance__extra-item">
-            <label class="request-assistance__extra-label" for="sugar">Сахарозаменитель</label>
-            <input class="request-assistance__extra-options" type="checkbox" name="sugar" id="sugar" checked>
+        <ul class="request-assistance__options-list">
+          <li class="request-assistance__options-item">
+            <input class="request-assistance__options" type="checkbox" name="sugar" id="sugar" checked>
+            <label class="request-assistance__label label-modification label-modification--checkbox"
+              for="sugar">Сахарозаменитель</label>
           </li>
-          <li class="request-assistance__extra-item">
-            <label class="request-assistance__extra-label" for="water">Питьевая вода</label>
-            <input class="request-assistance__extra-options" type="checkbox" name="water" id="water">
+          <li class="request-assistance__options-item">
+            <input class="request-assistance__options" type="checkbox" name="water" id="water">
+            <label class="request-assistance__label label-modification label-modification--checkbox"
+              for="water">Питьевая вода</label>
           </li>
-          <li class="request-assistance__extra-item">
-            <label class="request-assistance__extra-label" for="milk">Молоко</label>
-            <input class="request-assistance__extra-options" type="checkbox" name="milk" id="milk">
+          <li class="request-assistance__options-item">
+            <input class="request-assistance__options" type="checkbox" name="milk" id="milk">
+            <label class="request-assistance__label label-modification label-modification--checkbox"
+              for="milk">Молоко</label>
           </li>
-          <li class="request-assistance__extra-item">
-            <label class="request-assistance__extra-label" for="vitamins">Витамины</label>
-            <input class="request-assistance__extra-options" type="checkbox" name="vitamins" id="vitamins">
+          <li class="request-assistance__options-item">
+            <input class="request-assistance__options" type="checkbox" name="vitamins" id="vitamins">
+            <label class="request-assistance__label label-modification label-modification--checkbox"
+              for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="button button--request-assistance">Отправить заявку</button>
+      <button type="submit" class="button button--green">Отправить заявку</button>
       <p class="request-assistance__mark">* — Обязательные поля</p>
     </form>
     <section class="contacts">
