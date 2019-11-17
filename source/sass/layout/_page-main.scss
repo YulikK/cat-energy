@@ -1,0 +1,34 @@
+.page-main {
+  &__wrapper {
+    background-color: $color-green;
+    background-image: url("../img/jpg/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 320px, 305px;
+  }
+
+  &__head {
+    @include style-text-head1;
+  }
+
+  &__head--white {
+    color: $text-color-support;
+  }
+
+  &__head--black {
+    color: $text-color-main;
+    text-align: left;
+  }
+
+  &__description {
+    @include style-text-page-main-description;
+  }
+
+  &__slogan {
+    @include style-text-slogan;
+  }
+
+  &__image {
+    @include size(280px, 270px);
+  }
+}

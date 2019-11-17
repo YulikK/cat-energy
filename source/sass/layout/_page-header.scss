@@ -1,0 +1,5 @@
+.page-header {
+  &__logo-image {
+    @include size(191px, 39px);
+  }
+}

@@ -1,0 +1,10 @@
+.sample {
+  &__photo {
+    @include size(311px, 232px);
+  }
+
+  &__before,
+  &__after {
+    @include style-text-sample;
+  }
+}

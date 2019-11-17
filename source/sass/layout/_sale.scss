@@ -1,0 +1,15 @@
+.sale {
+  background-color: $color-green;
+  background-image: url("../img/jpg/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__image {
+    @include size(56px, 61px);
+    fill: $color-white;
+  }
+
+  &__title {
+    @include style-text-sale-title;
+  }
+}

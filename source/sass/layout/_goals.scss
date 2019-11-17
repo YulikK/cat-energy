@@ -1,0 +1,18 @@
+.goals {
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    background-color: $color-gray;
+  }
+
+  &__title {
+    @include style-text-goals-title;
+  }
+
+  &__link {
+    @include style-text-goals-link;
+    text-decoration: none;
+  }
+}

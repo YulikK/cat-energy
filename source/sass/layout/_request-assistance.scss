@@ -1,0 +1,26 @@
+.request-assistance {
+  fieldset {
+    border: none;
+    text-align: left;
+  }
+
+  &__label {
+    @include style-text-label;
+  }
+
+  &__input-text {
+    @include style-text-input;
+  }
+
+  &__options-list {
+    list-style: none;
+  }
+
+  &__legend {
+    @include style-text-legend;
+  }
+
+  &__mark {
+    @include style-text-mark;
+  }
+}

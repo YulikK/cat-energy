@@ -1,0 +1,20 @@
+.button {
+  @include style-text-button;
+  text-decoration: none;
+  &--green {
+    background-color: $color-green;
+  }
+  &--gray {
+    background-color: $color-gray;
+  }
+
+  .product {
+    @include style-text-product-button;
+  }
+}
+
+.product--more {
+  .button {
+    @include style-text-product-more-button;
+  }
+}

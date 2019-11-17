@@ -1,0 +1,5 @@
+.extra-catalog {
+  &__title {
+    @include style-text-extra-title;
+  }
+}

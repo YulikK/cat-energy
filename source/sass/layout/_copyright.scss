@@ -1,0 +1,13 @@
+.copyright {
+  &__link {
+    text-decoration: none;
+  }
+
+  &__title {
+    @include style-text-copyright;
+  }
+
+  &__logo {
+    @include size(27px, 34px);
+  }
+}

@@ -1,0 +1,7 @@
+.page-footer {
+  background-color: $color-gray;
+
+  &__logo-image {
+    @include size(128px, 24px);
+  }
+}

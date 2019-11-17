@@ -1,0 +1,33 @@
+.product {
+  &__link {
+    text-decoration: none;
+  }
+
+  &__image {
+    @include size(140px, 144px);
+  }
+
+  &__field,
+  &__value {
+    @include style-text-product-description;
+  }
+
+  &__more-image {
+    @include size(31px);
+  }
+
+  &__more-description {
+    @include style-text-product-more-description;
+  }
+
+  &--more {
+
+    .product-name {
+      text-align: center;
+    }
+  }
+}
+
+.product-name {
+  @include style-text-product-name;
+}

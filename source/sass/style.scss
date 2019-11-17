@@ -1,3 +1,38 @@
+@import "abstracts/mixins";
+@import "abstracts/font";
+@import "abstracts/variables";
+@import "layout/page-header";
+@import "layout/main-nav";
+@import "layout/site-list";
+@import "layout/page-main";
+@import "layout/goals";
+@import "layout/example";
+@import "layout/advantages";
+@import "layout/sample";
+@import "layout/contacts";
+@import "layout/social-list";
+@import "layout/copyright";
+@import "layout/catalog";
+@import "layout/product";
+@import "layout/extra-catalog";
+@import "layout/extra-list";
+@import "layout/sale";
+@import "layout/request-assistance";
+@import "components/buttons";
+
 body {
+  @include style-text-description;
   width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.title {
+  @include style-text-title;
 }

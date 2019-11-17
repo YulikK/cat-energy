@@ -1,0 +1,15 @@
+.extra-list {
+  list-style: none;
+
+  .product-name {
+    @include style-text-extra-product-name;
+  }
+
+  &__volume {
+    @include style-text-extra-volume;
+  }
+
+  &__price {
+    @include style-text-extra-price;
+  }
+}

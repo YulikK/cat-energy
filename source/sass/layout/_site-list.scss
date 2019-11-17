@@ -1,0 +1,8 @@
+.site-list {
+  list-style: none;
+
+  a {
+    @include style-text-menu;
+    text-decoration: none;
+  }
+}
