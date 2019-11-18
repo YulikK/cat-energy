@@ -1,13 +1,11 @@
-.copyright {
-  &__link {
-    text-decoration: none;
-  }
+.copyright__link {
+  text-decoration: none;
+}
 
-  &__title {
-    @include style-text-copyright;
-  }
+.copyright__title {
+  @include style-text-copyright;
+}
 
-  &__logo {
-    @include size(27px, 34px);
-  }
+.copyright__logo {
+  @include size(27px, 34px);
 }

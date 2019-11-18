@@ -3,24 +3,24 @@
     border: none;
     text-align: left;
   }
+}
 
-  &__label {
-    @include style-text-label;
-  }
+.request-assistance__label {
+  @include style-text-label;
+}
 
-  &__input-text {
-    @include style-text-input;
-  }
+.request-assistance__input-text {
+  @include style-text-input;
+}
 
-  &__options-list {
-    list-style: none;
-  }
+.request-assistance__options-list {
+  list-style: none;
+}
 
-  &__legend {
-    @include style-text-legend;
-  }
+.request-assistance__legend {
+  @include style-text-legend;
+}
 
-  &__mark {
-    @include style-text-mark;
-  }
+.request-assistance__mark {
+  @include style-text-mark;
 }

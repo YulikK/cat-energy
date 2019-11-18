@@ -4,12 +4,12 @@
   .product-name {
     @include style-text-extra-product-name;
   }
+}
 
-  &__volume {
-    @include style-text-extra-volume;
-  }
+.extra-list__volume {
+  @include style-text-extra-volume;
+}
 
-  &__price {
-    @include style-text-extra-price;
-  }
+.extra-list__price {
+  @include style-text-extra-price;
 }

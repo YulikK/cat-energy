@@ -1,29 +1,27 @@
-.product {
-  &__link {
-    text-decoration: none;
-  }
+.product__link {
+  text-decoration: none;
+}
 
-  &__image {
-    @include size(140px, 144px);
-  }
+.product__image {
+  @include size(140px, 144px);
+}
 
-  &__field,
-  &__value {
-    @include style-text-product-description;
-  }
+.product__field,
+.product__value {
+  @include style-text-product-description;
+}
 
-  &__more-image {
-    @include size(31px);
-  }
+.product__more-image {
+  @include size(31px);
+}
 
-  &__more-description {
-    @include style-text-product-more-description;
-  }
+.product__more-description {
+  @include style-text-product-more-description;
+}
 
-  &--more {
-    .product-name {
-      text-align: center;
-    }
+.product--more {
+  .product-name {
+    text-align: center;
   }
 }
 

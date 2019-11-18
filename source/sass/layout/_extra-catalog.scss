@@ -1,5 +1,3 @@
-.extra-catalog {
-  &__title {
-    @include style-text-extra-title;
-  }
+.extra-catalog__title {
+  @include style-text-extra-title;
 }

@@ -1,10 +1,8 @@
-.sample {
-  &__photo {
-    @include size(311px, 232px);
-  }
+.sample__photo {
+  @include size(311px, 232px);
+}
 
-  &__before,
-  &__after {
-    @include style-text-sample;
-  }
+.sample__start,
+.sample__end {
+  @include style-text-sample;
 }

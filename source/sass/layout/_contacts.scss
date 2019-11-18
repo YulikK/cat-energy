@@ -1,13 +1,11 @@
-.contacts {
-  &__title {
-    @include style-text-contacts-title;
-  }
+.contacts__title {
+  @include style-text-contacts-title;
+}
 
-  &__description {
-    @include style-text-contacts-description;
-  }
+.contacts__description {
+  @include style-text-contacts-description;
+}
 
-  &__map {
-    @include size(320px, 400px);
-  }
+.contacts__map {
+  @include size(320px, 400px);
 }

@@ -1,5 +1,3 @@
-.page-header {
-  &__logo-image {
-    @include size(191px, 39px);
-  }
+.page-header__logo-image {
+  @include size(191px, 39px);
 }

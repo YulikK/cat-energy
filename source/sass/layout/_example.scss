@@ -1,19 +1,19 @@
 .example {
   background-color: $color-gray;
+}
 
-  &__goals-list {
-    list-style: none;
-  }
+.example__goals-list {
+  list-style: none;
+}
 
-  &__goals-title {
-    @include style-text-goals-title;
-  }
+.example__goals-title {
+  @include style-text-goals-title;
+}
 
-  &__goals-description {
-    @include style-text-goals-description;
-  }
+.example__goals-description {
+  @include style-text-goals-description;
+}
 
-  &__price {
-    @include style-text-price;
-  }
+.example__price {
+  @include style-text-price;
 }
