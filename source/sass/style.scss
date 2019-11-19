@@ -1,9 +1,9 @@
-@import "abstracts/mixins";
+//  abstracts
 @import "abstracts/font";
 @import "abstracts/variables";
-//
+//  components
 @import "components/buttons";
-//
+//  layout
 @import "layout/advantages";
 @import "layout/catalog";
 @import "layout/contacts";
@@ -23,7 +23,11 @@
 @import "layout/social-list";
 
 body {
-  @include style-text-description;
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-color-description;
   width: 100%;
 }
 
@@ -36,5 +40,10 @@ body {
 }
 
 .title {
-  @include style-text-title;
+  font-family: $font-stack-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $text-color-main;
+  text-align: left;
 }

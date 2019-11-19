@@ -3,5 +3,6 @@
 }
 
 .page-footer__logo-image {
-  @include size(128px, 24px);
+  width: 128px;
+  height: 24px;
 }

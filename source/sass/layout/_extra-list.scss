@@ -2,14 +2,29 @@
   list-style: none;
 
   .product-name {
-    @include style-text-extra-product-name;
+    font-family: $font-stack-oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $text-color-main;
+    text-align: left;
   }
 }
 
 .extra-list__volume {
-  @include style-text-extra-volume;
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $text-color-description;
+  text-align: left;
 }
 
 .extra-list__price {
-  @include style-text-extra-price;
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $text-color-main;
+  text-align: right;
 }

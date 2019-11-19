@@ -1,11 +1,22 @@
 .contacts__title {
-  @include style-text-contacts-title;
+  font-family: $font-stack-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-main;
+  text-align: left;
 }
 
 .contacts__description {
-  @include style-text-contacts-description;
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-description;
+  text-align: left;
 }
 
 .contacts__map {
-  @include size(320px, 400px);
+  width: 320px;
+  height: 400px;
 }

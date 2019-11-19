@@ -6,10 +6,16 @@
 }
 
 .sale__image {
-  @include size(56px, 61px);
+  width: 56px;
+  height: 61px;
   fill: $color-white;
 }
 
 .sale__title {
-  @include style-text-sale-title;
+  font-family: $font-stack-arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-support;
+  text-align: center;
 }

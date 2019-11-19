@@ -1,8 +1,14 @@
 .sample__photo {
-  @include size(311px, 232px);
+  width: 311px;
+  height: 232px;
 }
 
 .sample__start,
 .sample__end {
-  @include style-text-sample;
+  font-family: $font-stack-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $text-color-main;
+  text-align: left;
 }

@@ -7,26 +7,38 @@
 }
 
 .page-main__head {
-  @include style-text-head1;
+  font-family: $font-stack-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $text-color-main;
+  text-align: left;
 
   &--white {
     color: $text-color-support;
-  }
-
-  &--black {
-    color: $text-color-main;
-    text-align: left;
+    text-align: center;
   }
 }
 
 .page-main__description {
-  @include style-text-page-main-description;
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-color-main;
+  text-align: left;
 }
 
 .page-main__slogan {
-  @include style-text-slogan;
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: $text-color-support;
+  text-align: center;
 }
 
 .page-main__image {
-  @include size(280px, 270px);
+  width: 280px;
+  height: 270px;
 }

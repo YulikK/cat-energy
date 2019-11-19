@@ -2,7 +2,12 @@
   list-style: none;
 
   a {
-    @include style-text-menu;
+    font-family: $font-stack-oswald;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $text-color-main;
+    text-align: center;
     text-decoration: none;
   }
 }

@@ -6,11 +6,21 @@
 }
 
 .request-assistance__label {
-  @include style-text-label;
+  font-family: $font-stack-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-color-black-two;
+  text-align: left;
 }
 
 .request-assistance__input-text {
-  @include style-text-input;
+  font-family: $font-stack-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-color-description;
+  text-align: left;
 }
 
 .request-assistance__options-list {
@@ -18,9 +28,19 @@
 }
 
 .request-assistance__legend {
-  @include style-text-legend;
+  font-family: $font-stack-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-color-main;
+  text-align: left;
 }
 
 .request-assistance__mark {
-  @include style-text-mark;
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $text-color-description;
+  text-align: center;
 }

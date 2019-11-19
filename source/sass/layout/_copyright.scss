@@ -3,9 +3,15 @@
 }
 
 .copyright__title {
-  @include style-text-copyright;
+  font-family: $font-stack-arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: $text-color-description;
 }
 
 .copyright__logo {
-  @include size(27px, 34px);
+  width: 27px;
+  height: 34px;
 }
