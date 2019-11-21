@@ -9,16 +9,13 @@
 .example__goals-title {
   font-family: $font-stack-oswald;
   font-size: 24px;
-  font-weight: 400;
   line-height: 37px;
   color: $text-color-main;
-  text-align: left;
 }
 
 .example__goals-description {
   font-family: $font-stack-arial;
   font-size: 12px;
-  font-weight: 400;
   line-height: 12px;
   color: $text-color-description;
   text-align: center;
@@ -27,7 +24,6 @@
 .example__price {
   font-family: $font-stack-oswald;
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   color: $text-color-main;
   text-align: center;

@@ -9,10 +9,8 @@
 .page-main__head {
   font-family: $font-stack-oswald;
   font-size: 36px;
-  font-weight: 400;
   line-height: 36px;
   color: $text-color-main;
-  text-align: left;
 
   &--white {
     color: $text-color-support;
@@ -23,19 +21,18 @@
 .page-main__description {
   font-family: $font-stack-oswald;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   color: $text-color-main;
-  text-align: left;
+  text-transform: uppercase;
 }
 
 .page-main__slogan {
   font-family: $font-stack-oswald;
   font-size: 14px;
-  font-weight: 400;
   line-height: 14px;
   color: $text-color-support;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .page-main__image {

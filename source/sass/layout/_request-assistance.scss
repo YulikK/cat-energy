@@ -1,45 +1,40 @@
 .request-assistance {
   fieldset {
     border: none;
-    text-align: left;
   }
 }
 
 .request-assistance__label {
   font-family: $font-stack-oswald;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: $text-color-black-two;
-  text-align: left;
+  text-transform: uppercase;
 }
 
 .request-assistance__input-text {
   font-family: $font-stack-oswald;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   color: $text-color-description;
-  text-align: left;
+  text-transform: uppercase;
 }
 
 .request-assistance__options-list {
   list-style: none;
+  padding: 0;
 }
 
 .request-assistance__legend {
   font-family: $font-stack-oswald;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
   color: $text-color-main;
-  text-align: left;
 }
 
 .request-assistance__mark {
   font-family: $font-stack-arial;
   font-size: 14px;
-  font-weight: 400;
   line-height: 16px;
   color: $text-color-description;
   text-align: center;

@@ -16,6 +16,7 @@
 @import "layout/page-header";
 @import "layout/page-main";
 @import "layout/product";
+@import "layout/product-name";
 @import "layout/request-assistance";
 @import "layout/sale";
 @import "layout/sample";
@@ -25,10 +26,16 @@
 body {
   font-family: $font-stack-arial;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   color: $text-color-description;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -42,8 +49,6 @@ body {
 .title {
   font-family: $font-stack-oswald;
   font-size: 36px;
-  font-weight: 400;
   line-height: 60px;
   color: $text-color-main;
-  text-align: left;
 }
