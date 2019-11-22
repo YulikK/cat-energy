@@ -1,15 +1,16 @@
-.page-main__wrapper {
-  background-color: $color-green;
-  background-image: url("../img/jpg/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px, 305px;
-}
+// .page-main__wrapper {
+  // background-color: $color-green;
+  // background-image: url("../img/jpg/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center top;
+  // background-size: 320px, 305px;
+// } Временно для сетки
 
 .page-main__head {
   font-family: $font-stack-oswald;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: $text-color-main;
 
   &--white {

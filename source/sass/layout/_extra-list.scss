@@ -6,7 +6,7 @@
     font-family: $font-stack-oswald;
     font-size: 16px;
     line-height: 16px;
-    color: $text-color-main;
+    color: $text-color-black-two;
   }
 }
 
@@ -27,8 +27,4 @@
 
 .extra-list__item {
   border-bottom: 1px solid $color-border-gray;
-}
-
-.extra-list__item:first-child {
-  border-top: 1px solid $color-border-gray;
 }
