@@ -15,6 +15,7 @@
 @import "layout/main-nav";
 @import "layout/page-header";
 @import "layout/page-main";
+@import "layout/page-footer";
 @import "layout/product";
 @import "layout/product-name";
 @import "layout/request-assistance";
@@ -22,6 +23,7 @@
 @import "layout/sample";
 @import "layout/site-list";
 @import "layout/social-list";
+//@import "abstracts/outlines";
 
 body {
   font-family: $font-stack-arial;
