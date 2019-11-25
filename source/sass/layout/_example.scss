@@ -1,0 +1,36 @@
+.example {
+  background-color: $color-gray;
+}
+
+.example__goals-list {
+  list-style: none;
+  padding: 0;
+}
+
+.example__goals-item {
+  text-align: center;
+}
+
+.example__goals-title {
+  font-family: $font-stack-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color-main;
+  text-transform: uppercase;
+}
+
+.example__goals-description {
+  font-family: $font-stack-arial;
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-color-description;
+}
+
+.example__price {
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $text-color-main;
+  text-align: center;
+  text-transform: uppercase;
+}

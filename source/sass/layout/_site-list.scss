@@ -1,0 +1,20 @@
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    font-family: $font-stack-oswald;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $text-color-main;
+    text-align: center;
+  }
+}
+
+.site-list__item {
+  text-align: center;
+  padding: 24px 124px;
+  border-bottom: 1px solid $color-border-gray;
+}

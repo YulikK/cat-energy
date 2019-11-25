@@ -1,0 +1,36 @@
+
+.product {
+  border-bottom: 1px solid $color-border-gray;
+}
+
+.product__image {
+  width: 140px;
+  height: 144px;
+}
+
+.product__field,
+.product__value {
+  font-family: $font-stack-arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-description;
+}
+
+.product__more-image {
+  width: 31px;
+  height: 31px;
+}
+
+.product__more-description {
+  font-family: $font-stack-arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color-description;
+  text-align: center;
+}
+
+.product--more {
+  .product-name {
+    text-align: center;
+  }
+}

@@ -1,0 +1,42 @@
+.page-main__wrapper {
+  background-color: $color-green;
+  background-image: url("../img/jpg/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 320px, 305px;
+}
+
+.page-main__head {
+  font-family: $font-stack-oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $text-color-main;
+
+  &--white {
+    color: $text-color-support;
+    text-align: center;
+  }
+}
+
+.page-main__description {
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-main;
+  text-transform: uppercase;
+}
+
+.page-main__slogan {
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-support;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-main__image {
+  width: 280px;
+  height: 270px;
+}

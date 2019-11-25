@@ -11,3 +11,5 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+source/img/preview/
+source/sass/abstracts/_outlines.scss

@@ -1,0 +1,51 @@
+.request-assistance {
+  fieldset {
+    border: none;
+  }
+}
+
+.request-assistance__main-group,
+.request-assistance__options-group,
+.request-assistance__contacts-group,
+.request-assistance__comment-group,
+.request-assistance__extra-group {
+  padding: 0;
+  margin: 0;
+}
+
+.request-assistance__label {
+  font-family: $font-stack-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-black-two;
+  text-transform: uppercase;
+}
+
+.request-assistance__input-text {
+  font-family: $font-stack-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color-description;
+  text-transform: uppercase;
+}
+
+.request-assistance__options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.request-assistance__legend {
+  font-family: $font-stack-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color-main;
+  padding: 0;
+}
+
+.request-assistance__mark {
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color-description;
+  text-align: center;
+}
