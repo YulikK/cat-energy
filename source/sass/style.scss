@@ -1,3 +1,62 @@
+//  abstracts
+@import "abstracts/font";
+@import "abstracts/variables";
+//  components
+@import "components/buttons";
+//  layout
+@import "layout/advantages";
+@import "layout/catalog";
+@import "layout/contacts";
+@import "layout/copyright";
+@import "layout/example";
+@import "layout/extra-catalog";
+@import "layout/extra-list";
+@import "layout/goals";
+@import "layout/main-nav";
+@import "layout/page-header";
+@import "layout/page-main";
+@import "layout/page-footer";
+@import "layout/product";
+@import "layout/product-name";
+@import "layout/request-assistance";
+@import "layout/sale";
+@import "layout/sample";
+@import "layout/site-list";
+@import "layout/social-list";
+//@import "abstracts/outlines";
+
 body {
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-description;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.title {
+  font-family: $font-stack-oswald;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $text-color-main;
 }

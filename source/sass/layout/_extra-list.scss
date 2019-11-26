@@ -1,0 +1,30 @@
+.extra-list {
+  list-style: none;
+  padding: 0;
+
+  .product-name {
+    font-family: $font-stack-oswald;
+    font-size: 16px;
+    line-height: 16px;
+    color: $text-color-black-two;
+  }
+}
+
+.extra-list__volume {
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-description;
+}
+
+.extra-list__price {
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-main;
+  text-align: right;
+}
+
+.extra-list__item {
+  border-bottom: 1px solid $color-border-gray;
+}
