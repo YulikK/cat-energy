@@ -1,6 +1,10 @@
-// .example {
-//   background-color: $color-gray;
-// }
+.example {
+  // background-color: $color-gray;
+  width: 100%;
+  min-height: 705px;// Временно для сетки
+  margin: 0 auto;
+  margin-top: 42px;
+}
 
 .example__goals-list {
   list-style: none;
@@ -33,4 +37,20 @@
   color: $text-color-main;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 100%;
+    min-height: 1095px;// Временно для сетки
+    margin-top: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    width: 100%;
+    min-height: 676px;// Временно для сетки
+    margin: 0 auto;
+  }
 }

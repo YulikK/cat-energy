@@ -1,9 +1,14 @@
-// .sale {
-//   background-color: $color-green;
-//   background-image: url("../img/jpg/gift-photo-mobile@1x.jpg");
-//   background-repeat: no-repeat;
-//   background-position: top center;
-// }
+.sale {
+  // background-color: $color-green;
+  // background-image: url("../img/jpg/gift-photo-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  margin: 0 auto;
+  margin-top: 39px;
+  min-height: 289px;// Временно для сетки
+  margin-bottom: 39px;
+  width: 280px;
+}
 
 .sale__image {
   width: 56px;
@@ -17,4 +22,21 @@
   line-height: 20px;
   color: $text-color-support;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .sale {
+    margin-top: 69px;
+    margin-bottom: 76px;
+    min-height: 200px;// Временно для сетки
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sale {
+    margin: 0;
+    min-height: 289px;// Временно для сетки
+    width: 245px;
+  }
 }

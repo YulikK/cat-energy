@@ -6,3 +6,78 @@
   width: 128px;
   height: 24px;
 }
+
+.page-footer__logo {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 94px;// Временно для сетки
+  display: block;
+}
+
+.page-footer__social {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 62px;// Временно для сетки
+}
+
+.page-footer__copyright {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 78px;// Временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: $wrapper-tablet;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    width: 235px;
+    min-height: 45px;// Временно для сетки
+    margin-bottom: 55px;
+    margin-top: 49px;
+  }
+
+  .page-footer__social {
+    width: 235px;
+    min-height: 45px;// Временно для сетки
+    margin-bottom: 55px;
+    margin-top: 49px;
+  }
+
+  .page-footer__copyright {
+    width: 235px;
+    min-height: 45px;// Временно для сетки
+    margin-bottom: 55px;
+    margin-top: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    width: 1220px;
+  }
+
+  .page-footer__logo {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .page-footer__social {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .page-footer__copyright {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

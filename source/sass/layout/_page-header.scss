@@ -2,3 +2,79 @@
   width: 191px;
   height: 39px;
 }
+
+.page-header__logo {
+  //Временно для сетки
+  width: 191px;
+  min-height: 65px;// Временно для сетки
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__wrapper {
+  width: $wrapper-mobile;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: $wrapper-tablet;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    // width: 100%;
+    width: $desktop-width;
+    margin: 0 auto;
+
+    &--index {
+      position: absolute;
+      z-index: 2;
+    }
+
+    // &--catalog {
+    //   width: 1440px;
+    //   margin: 0 auto;
+    // }
+  }
+
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
+  }
+
+  .page-header__wrapper {
+    width: 1220px;
+    align-items: flex-end;
+  }
+}
+
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &--form {
+    width: 280px;
+  }
+}

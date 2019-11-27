@@ -1,0 +1,30 @@
+.main-catalog {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.main-catalog__list {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $wrapper-tablet;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+    width: 1220px;
+  }
+
+  .main-catalog__list {
+    width: 100%;
+  }
+}

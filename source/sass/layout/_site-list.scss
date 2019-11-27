@@ -2,6 +2,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  /* Временно для сетки */
+  min-height: 195px;// Временно для сетки
 
   a {
     font-family: $font-stack-oswald;
@@ -15,6 +17,29 @@
 
 .site-list__item {
   text-align: center;
-  padding: 20px;
+  padding: 21px;
   border-bottom: 1px solid $color-border-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 479px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Временно для сетки */
+    min-height: 60px;// Временно для сетки
+
+    a {
+      font-family: $font-stack-oswald;
+      font-size: 18px;
+      line-height: 25px;
+      color: $text-color-black-two;
+      text-align: left;
+    }
+  }
+
+  .site-list__item {
+    padding: 0;
+  }
 }

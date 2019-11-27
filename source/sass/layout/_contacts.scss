@@ -1,6 +1,8 @@
-// .contacts {
-//   background-color: $color-gray;
-// }
+.contacts {
+  // background-color: $color-gray;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .contacts__title {
   font-family: $font-stack-oswald;
@@ -21,3 +23,47 @@
 //   width: 320px;
 //   height: 400px;
 // }
+
+.contacts__wrapper {
+  min-height: 114px;// Временно для сетки
+  width: $wrapper-mobile;
+  margin: 0 auto;
+}
+
+.contacts__wrapper-map {
+  min-height: 362px;// Временно для сетки
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 83%;
+    margin: 0 auto;
+    min-height: 208px;// Временно для сетки
+  }
+
+  .contacts__wrapper-map {
+    width: 100%;
+    min-height: 400px;// Временно для сетки
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: $desktop-width;
+    position: relative;
+  }
+
+  .contacts__wrapper-map {
+    width: $desktop-width;
+    min-height: 400px;// Временно для сетки
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    width: 570px;
+    min-height: 201px;// Временно для сетки
+    top: 95px;
+    left: 110px;
+  }
+}

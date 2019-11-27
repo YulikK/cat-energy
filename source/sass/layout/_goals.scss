@@ -1,11 +1,23 @@
-.goals__list {
-  list-style: none;
-  padding: 0;
+.goals {
+  width: 100%;
+  margin: 0 auto;
 }
 
-// .goals__item {
-//   background-color: $color-gray;
-// }
+.goals__list {
+  width: 90%;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goals__item {
+  // background-color: $color-gray;
+  width: 100%;
+  min-height: 266px;// Временно для сетки
+  margin-top: 20px;
+}
 
 .goals__title {
   font-family: $font-stack-oswald;
@@ -21,4 +33,48 @@
   font-size: 16px;
   line-height: 16px;
   color: $text-color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .goals {
+    margin: 0 auto;
+    width: $wrapper-tablet;
+  }
+
+  .goals__list {
+    width: $wrapper-tablet;
+    margin-top: 20px;
+  }
+
+  .goals__item {
+    min-height: 380px;// Временно для сетки
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .goals__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goals {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .goals__list {
+    width: $wrapper-tablet;
+    margin-top: 80px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .goals__item {
+    width: 570px;
+    min-height: 372px;// Временно для сетки
+    margin-bottom: 0;
+  }
 }

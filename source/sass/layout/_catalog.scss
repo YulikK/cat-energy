@@ -2,3 +2,33 @@
   list-style: none;
   padding: 0;
 }
+
+.catalog__item {
+  min-height: 209px;// Временно для сетки
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    width: 331px;
+    min-height: 441px;// Временно для сетки
+    margin-top: 140px;
+  }
+
+  // .catalog__item:nth-child(1),
+  // .catalog__item:nth-child(2) {
+  //   margin-top: 90px;
+  // }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 245px;
+    min-height: 431px;// Временно для сетки
+    margin-top: 142px;
+  }
+
+  .catalog__item:nth-child(1),
+  .catalog__item:nth-child(2) {
+    margin-top: 142px;
+  }
+}
