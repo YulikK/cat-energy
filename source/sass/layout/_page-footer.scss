@@ -30,8 +30,7 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    width: $wrapper-tablet;
-    margin: 0 auto;
+    margin: 0 30px;
   }
 
   .page-footer__logo {
@@ -64,6 +63,7 @@
 
   .page-footer__wrapper {
     width: 1220px;
+    margin: 0 auto;
   }
 
   .page-footer__logo {

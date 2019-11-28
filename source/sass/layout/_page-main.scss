@@ -1,5 +1,5 @@
 .page-main__wrapper {
-  width: $wrapper-mobile;
+  width: 100%;
   // background-color: $color-green;
   // background-image: url("../img/jpg/index-background-mobile@1x.jpg");
   // background-repeat: no-repeat;
@@ -15,6 +15,17 @@
     min-height: 148px; // Временно для сетки
   }
 }
+
+// .page-main__wrapper {
+//   width: 320px;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+
+//   &--form {
+//     width: 280px;
+//   }
+// }
 
 .page-main__head {
   margin-top: 30px;
@@ -79,7 +90,6 @@
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
     position: relative;
-    width: $wrapper-tablet;
     min-height: 835px; // Временно для сетки
 
     &--catalog {

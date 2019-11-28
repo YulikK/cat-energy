@@ -26,8 +26,9 @@
 
 .contacts__wrapper {
   min-height: 114px;// Временно для сетки
-  width: $wrapper-mobile;
   margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 25px;
 }
 
 .contacts__wrapper-map {
@@ -38,7 +39,7 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     width: 83%;
-    margin: 0 auto;
+    margin: 0 71px;
     min-height: 208px;// Временно для сетки
   }
 
@@ -65,5 +66,6 @@
     min-height: 201px;// Временно для сетки
     top: 95px;
     left: 110px;
+    margin: 0;
   }
 }

@@ -10,13 +10,12 @@
 }
 
 .advantages__list {
-  width: $wrapper-mobile;
   list-style: none;
   padding: 0;
   margin-top: 37px;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .advantages__item {
@@ -29,10 +28,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
-    width: $wrapper-tablet;
-  }
-
   .advantages__item {
     width: 260px;
     min-height: 241px;// Временно для сетки
@@ -48,11 +43,13 @@
   }
 
   .advantages__list {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .advantages__item:nth-child(2n) {
@@ -66,9 +63,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
-    width: 1220px;
-  }
+  // .advantages {
+  //   width: 1220px;
+  // }
 
   .advantages__title {
     margin-top: 79px;
@@ -77,6 +74,8 @@
   .advantages__list {
     justify-content: space-between;
     margin-top: 60px;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 
   .advantages__item {
