@@ -2,6 +2,16 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-top: 75px;
+  }
 }
 
 .extra-catalog__title {
@@ -13,58 +23,34 @@
   margin-top: 25px;
   margin-left: 19px;
   margin-bottom: 30px;
-}
 
-.extra-catalog__list {
-  margin: 0 20px;
-}
-
-.extra-list__item {
-  min-height: 128px; // Временно для сетки
-}
-
-@media (min-width: $tablet-width) {
-  .extra-catalog {
-    width: 100%;
-    margin-top: 67px;
-  }
-
-  .extra-catalog__title {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-left: 37px;
     margin-bottom: 79px;
   }
 
-  .extra-catalog__list {
-    margin: 0 30px;
-  }
-
-  .extra-list__item {
-    min-height: 138px; // Временно для сетки
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .extra-catalog {
-    width: 1220px;
-    margin-top: 75px;
+.extra-catalog__list {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
   }
 
-  .extra-catalog__list {
+  @media (min-width: $desktop-width) {
     width: 895px;
     margin: 0;
   }
+}
 
-  .extra-list__item {
-    min-height: 71px; // Временно для сетки
-  }
-
-  .extra-catalog__title {
-    margin-left: 0;
-  }
-
-  .extra-catalog-wrapper {
+.extra-catalog-wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 86px;

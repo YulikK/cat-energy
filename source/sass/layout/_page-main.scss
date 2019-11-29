@@ -1,3 +1,11 @@
+.page-main {
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
 .page-main__wrapper {
   width: 100%;
   // background-color: $color-green;
@@ -14,18 +22,36 @@
   &--form {
     min-height: 148px; // Временно для сетки
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 835px; // Временно для сетки
+
+    &--catalog {
+      min-height: 122px; // Временно для сетки
+    }
+
+    &--form {
+      min-height: 247px; // Временно для сетки
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: $max-width;
+    margin: 0 auto;
+    min-height: 698px; // Временно для сетки
+    // background: url("../img/jpg/index-background-desktop@1x.jpg") no-repeat top right;
+
+    &--catalog {
+      min-height: 157px; // Временно для сетки
+    }
+
+    &--form {
+      min-height: 284px; // Временно для сетки
+    }
+  }
 }
-
-// .page-main__wrapper {
-//   width: 320px;
-//   margin: 0 auto;
-//   display: flex;
-//   flex-direction: column;
-
-//   &--form {
-//     width: 280px;
-//   }
-// }
 
 .page-main__head {
   margin-top: 30px;
@@ -49,59 +75,8 @@
   &--form {
     text-align: left;
   }
-}
 
-.page-main__description {
-  font-family: $font-stack-oswald;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-color-main;
-  text-transform: uppercase;
-  margin-top: 34px;
-}
-
-.page-main__slogan {
-  margin-top: 23px;
-  font-family: $font-stack-oswald;
-  font-size: 14px;
-  line-height: 14px;
-  color: $text-color-support;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.page-main__image {
-  width: 280px;
-  height: 270px;
-  margin-top: 20px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-main__search-program {
-  box-sizing: border-box;
-  display: block;
-  width: 280px;
-  margin: 0 auto;
-  padding: 11px 73px;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main__wrapper {
-    position: relative;
-    min-height: 835px; // Временно для сетки
-
-    &--catalog {
-      min-height: 122px; // Временно для сетки
-    }
-
-    &--form {
-      min-height: 247px; // Временно для сетки
-    }
-  }
-
-  .page-main__head {
+  @media (min-width: $tablet-width) {
     margin-top: 30px;
     font-size: 60px;
     line-height: 60px;
@@ -117,16 +92,44 @@
     &--form {
       padding: 0;
     }
-
-    .page-main__description {
-      font-size: 20px;
-      line-height: 30px;
-      margin-left: 41px;
-      margin-top: 58px;
-    }
   }
 
-  .page-main__slogan {
+  @media (min-width: $desktop-width) {
+    margin-top: 220px;
+
+    &--catalog {
+      margin-top: 75px;
+    }
+  }
+}
+
+
+.page-main__description {
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-main;
+  text-transform: uppercase;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 41px;
+    margin-top: 58px;
+  }
+}
+
+.page-main__slogan {
+  margin-top: 23px;
+  font-family: $font-stack-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-color-support;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $text-color-main;
@@ -135,15 +138,39 @@
     padding-right: 88px;
     margin-top: 43px;
   }
+}
 
-  .page-main__image {
+.page-main__image {
+  width: 280px;
+  height: 270px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
     position: absolute;
     width: 709px;
     height: 609px;
     top: 210px;
   }
 
-  .page-main__search-program {
+  @media (min-width: $desktop-width) {
+    top: 103px;
+    left: 459px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.page-main__search-program {
+  box-sizing: border-box;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 11px 73px;
+
+  @media (min-width: $tablet-width) {
     width: 245px;
     margin-left: 88px;
     margin-top: 33px;
@@ -152,52 +179,17 @@
     margin-bottom: 520px;
   }
 
-  .page-main__search-program.button {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    margin-bottom: 188px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-main {
-    width: $desktop-width;
-    margin: 0 auto;
-  }
 
-  .page-main__wrapper {
-    width: $desktop-width;
-    margin: 0 auto;
-    min-height: 698px; // Временно для сетки
-    // background: url("../img/jpg/index-background-desktop@1x.jpg") no-repeat top right;
-
-    &--catalog {
-      width: 1220px;
-      min-height: 157px; // Временно для сетки
-    }
-
-    &--form {
-      min-height: 284px; // Временно для сетки
-    }
-  }
-
-  .page-main__head {
-    margin-top: 220px;
-
-    &--catalog {
-      margin-top: 75px;
-    }
-  }
-
-  .page-main__image {
-    top: 103px;
-    left: 459px;
-    width: 552px;
-    height: 499px;
-  }
-
-  .page-main__search-program {
-    margin-top: 35px;
-    margin-bottom: 188px;
+.page-main__search-program.button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
   }
 }

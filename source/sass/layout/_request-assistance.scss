@@ -1,6 +1,5 @@
 .request-assistance {
-  width: 88%;
-  margin: 0 auto;
+  margin: 0 20px;
 
   fieldset {
     border: none;
@@ -10,7 +9,19 @@
     width: 280px;
     margin: 0 auto;
     display: block;
-    min-height: 40px;// Временно для сетки
+    min-height: 40px; // Временно для сетки
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -22,26 +33,87 @@
   padding: 0;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 71px;
+    margin-right: 67px;
+  }
 }
 
 .request-assistance__main-group {
-  min-height: 214px;// Временно для сетки
+  min-height: 214px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 71px;
+    margin-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
 }
 
 .request-assistance__options-group {
-  min-height: 156px;// Временно для сетки
+  min-height: 156px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 202px; // Временно для сетки
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 570px;
+  }
 }
 
 .request-assistance__contacts-group {
-  min-height: 242px;// Временно для сетки
+  min-height: 242px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    margin-top: 45px;
+    min-height: 228px; // Временно для сетки
+  }
 }
 
 .request-assistance__comment-group {
-  min-height: 244px;// Временно для сетки
+  min-height: 244px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 288px; // Временно для сетки
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    margin-top: 0;
+    min-height: 300px; // Временно для сетки
+  }
 }
 
 .request-assistance__extra-group {
-  min-height: 244px;// Временно для сетки
+  min-height: 244px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px; // Временно для сетки
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    min-height: 206px; // Временно для сетки
+    margin-top: 52px;
+  }
 }
 
 .request-assistance__label {
@@ -85,103 +157,32 @@
 
 .request-assistance__wrapper {
   width: 100%;
-  min-height: 109px;// Временно для сетки
+  min-height: 109px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 71px;
+    margin-right: 67px;
+    display: flex;
+    min-height: 132px; // Временно для сетки
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    // width: 85%;
+  }
 }
 
 .request-assistance__wrapper-group {
   width: 100%;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .request-assistance {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .request-assistance__main-group,
-  .request-assistance__options-group,
-  .request-assistance__contacts-group,
-  .request-assistance__comment-group,
-  .request-assistance__extra-group {
-    width: 83%;
-    margin: 0 auto;
-  }
-
-  .request-assistance__main-group {
-    width: 83%;
-  }
-
-  .request-assistance__options-group {
-    min-height: 202px;// Временно для сетки
-    margin-top: 66px;
-  }
-
-  .request-assistance__contacts-group {
-    margin-top: 66px;
-  }
-
-  .request-assistance__comment-group {
-    min-height: 288px;// Временно для сетки
-    margin-top: 66px;
-  }
-
-  .request-assistance__extra-group {
-    min-height: 256px;// Временно для сетки
-    margin-top: 66px;
-  }
-
-  .request-assistance__wrapper {
-    width: 83%;
-    margin: 0 auto;
-    display: flex;
-    min-height: 132px;// Временно для сетки
-    // justify-content: space-between;
-  }
-
-  .request-assistance .button {
-    margin: 0;
-    font-size: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .request-assistance__wrapper-group {
-    width: 85%;
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0 110px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-  }
-
-  .request-assistance__options-group {
-    margin: 0;
-    width: 570px;
-  }
-
-  .request-assistance__main-group {
-    width: 570px;
-    margin: 0;
-  }
-
-  .request-assistance__contacts-group {
-    margin-top: 45px;
-    width: 85%;
-    min-height: 228px;// Временно для сетки
-  }
-
-  .request-assistance__comment-group {
-    margin-top: 0;
-    width: 85%;
-    min-height: 300px;// Временно для сетки
-  }
-
-  .request-assistance__extra-group {
-    min-height: 206px;// Временно для сетки
-    margin-top: 52px;
-    width: 85%;
-  }
-
-  .request-assistance__wrapper {
-    width: 85%;
   }
 }

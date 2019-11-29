@@ -1,9 +1,21 @@
 .example {
   // background-color: $color-gray;
   width: 100%;
-  min-height: 705px;// Временно для сетки
+  min-height: 705px; // Временно для сетки
   margin: 0 auto;
   margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 1095px; // Временно для сетки
+    margin-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    min-height: 676px; // Временно для сетки
+    margin: 0 auto;
+  }
 }
 
 .example__goals-list {
@@ -37,20 +49,4 @@
   color: $text-color-main;
   text-align: center;
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .example {
-    width: 100%;
-    min-height: 1095px;// Временно для сетки
-    margin-top: 52px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example {
-    width: 100%;
-    min-height: 676px;// Временно для сетки
-    margin: 0 auto;
-  }
 }

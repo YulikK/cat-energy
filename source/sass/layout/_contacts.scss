@@ -2,6 +2,12 @@
   // background-color: $color-gray;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: $max-width;
+    position: relative;
+  }
 }
 
 .contacts__title {
@@ -25,47 +31,36 @@
 // }
 
 .contacts__wrapper {
-  min-height: 114px;// Временно для сетки
+  min-height: 114px; // Временно для сетки
   margin: 0 auto;
-  margin-left: 20px;
-  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 208px; // Временно для сетки
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 570px;
+    min-height: 201px; // Временно для сетки
+    top: 95px;
+    margin: 0 110px;
+  }
 }
 
 .contacts__wrapper-map {
-  min-height: 362px;// Временно для сетки
+  min-height: 362px; // Временно для сетки
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .contacts__wrapper {
-    width: 83%;
-    margin: 0 71px;
-    min-height: 208px;// Временно для сетки
-  }
-
-  .contacts__wrapper-map {
+  @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 400px;// Временно для сетки
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    width: $desktop-width;
-    position: relative;
+    min-height: 400px; // Временно для сетки
   }
 
-  .contacts__wrapper-map {
-    width: $desktop-width;
-    min-height: 400px;// Временно для сетки
-  }
-
-  .contacts__wrapper {
-    position: absolute;
-    width: 570px;
-    min-height: 201px;// Временно для сетки
-    top: 95px;
-    left: 110px;
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: $max-width;
+    min-height: 400px; // Временно для сетки
   }
 }
