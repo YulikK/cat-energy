@@ -26,37 +26,22 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: $desktop-width;
-    max-width: $max-width;
-    margin: 0 auto;
-
-    &--index {
-      position: absolute;
-      z-index: 2;
-      width: 100%;
-    }
-  }
-}
-
-.page-header__wrapper {
-  // margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
     align-items: flex-end;
+    max-width: 1220px;
+    width: 100%;
     margin: 0 auto;
+
+    &--index {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      margin: 0 110px;
+    }
   }
 }
