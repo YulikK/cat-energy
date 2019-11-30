@@ -1,6 +1,27 @@
 .request-assistance {
+  margin: 0 20px;
+
   fieldset {
     border: none;
+  }
+
+  .button {
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+    min-height: 40px; // Временно для сетки
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -10,7 +31,89 @@
 .request-assistance__comment-group,
 .request-assistance__extra-group {
   padding: 0;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 71px;
+    margin-right: 67px;
+  }
+}
+
+.request-assistance__main-group {
+  min-height: 214px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 71px;
+    margin-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
+}
+
+.request-assistance__options-group {
+  min-height: 156px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 202px; // Временно для сетки
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 570px;
+  }
+}
+
+.request-assistance__contacts-group {
+  min-height: 242px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    margin-top: 45px;
+    min-height: 228px; // Временно для сетки
+  }
+}
+
+.request-assistance__comment-group {
+  min-height: 244px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 288px; // Временно для сетки
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    margin-top: 0;
+    min-height: 300px; // Временно для сетки
+  }
+}
+
+.request-assistance__extra-group {
+  min-height: 244px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px; // Временно для сетки
+    margin-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    min-height: 206px; // Временно для сетки
+    margin-top: 52px;
+  }
 }
 
 .request-assistance__label {
@@ -48,4 +151,38 @@
   line-height: 16px;
   color: $text-color-description;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 34px;
+}
+
+.request-assistance__wrapper {
+  width: 100%;
+  min-height: 109px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 71px;
+    margin-right: 67px;
+    display: flex;
+    min-height: 132px; // Временно для сетки
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    // width: 85%;
+  }
+}
+
+.request-assistance__wrapper-group {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0 110px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }

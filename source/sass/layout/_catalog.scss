@@ -2,3 +2,24 @@
   list-style: none;
   padding: 0;
 }
+
+.catalog__item {
+  min-height: 209px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: 331px;
+    min-height: 441px; // Временно для сетки
+    margin-top: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 431px; // Временно для сетки
+    margin-top: 142px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 142px;
+    }
+  }
+}

@@ -1,3 +1,25 @@
 .main-nav {
-  // width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 195px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    min-height: 108px; // Временно для сетки
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+    min-height: 113px; // Временно для сетки
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 65px; // Временно для сетки
 }
