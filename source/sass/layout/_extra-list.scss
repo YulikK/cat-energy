@@ -26,5 +26,14 @@
 }
 
 .extra-list__item {
+  min-height: 128px; // Временно для сетки
   border-bottom: 1px solid $color-border-gray;
+
+  @media (min-width: $tablet-width) {
+    min-height: 138px; // Временно для сетки
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 71px; // Временно для сетки
+  }
 }

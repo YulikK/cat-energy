@@ -1,8 +1,83 @@
 .page-footer {
-  background-color: $color-gray;
+  // background-color: $color-gray;
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__logo-image {
   width: 128px;
   height: 24px;
+}
+
+.page-footer__logo {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 94px; // Временно для сетки
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 235px;
+    min-height: 45px; // Временно для сетки
+    margin-bottom: 55px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.page-footer__social {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 62px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: 235px;
+    min-height: 45px; // Временно для сетки
+    margin-bottom: 55px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.page-footer__copyright {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 78px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: 235px;
+    min-height: 45px; // Временно для сетки
+    margin-bottom: 55px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }

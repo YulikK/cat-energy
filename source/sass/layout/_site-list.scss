@@ -2,6 +2,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  min-height: 195px; // Временно для сетки
+
+  @media (min-width: $tablet-width) {
+    width: 479px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px; // Временно для сетки
+  }
 
   a {
     font-family: $font-stack-oswald;
@@ -10,11 +19,23 @@
     line-height: 20px;
     color: $text-color-main;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-family: $font-stack-oswald;
+      font-size: 18px;
+      line-height: 25px;
+      color: $text-color-black-two;
+      text-align: left;
+    }
   }
 }
 
 .site-list__item {
   text-align: center;
-  padding: 24px 124px;
+  padding: 21px;
   border-bottom: 1px solid $color-border-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

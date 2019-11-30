@@ -1,10 +1,59 @@
+.goals {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .goals__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .goals__item {
-  background-color: $color-gray;
+  // background-color: $color-gray;
+  width: 100%;
+  min-height: 266px; // Временно для сетки
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 380px; // Временно для сетки
+    margin-bottom: 30px;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 372px; // Временно для сетки
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .goals__title {
