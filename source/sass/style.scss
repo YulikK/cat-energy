@@ -1,3 +1,4 @@
+
 //  abstracts
 @import "abstracts/font";
 @import "abstracts/variables";
@@ -24,7 +25,7 @@
 @import "layout/sample";
 @import "layout/site-list";
 @import "layout/social-list";
-// @import "abstracts/outlines";
+@import "abstracts/outlines";
 
 body {
   font-family: $font-stack-arial;
@@ -46,12 +47,20 @@ img {
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .title {

@@ -1,22 +1,33 @@
 .page-header__logo-image {
-  width: 191px;
+  max-width: 191px;
   height: 39px;
-}
-
-.page-header__logo {
-  width: 191px;
-  min-height: 65px; // Временно для сетки
-  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 174px;
+    max-width: 174px;
     height: 60px;
-    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 203px;
+    max-width: 203px;
     height: 60px;
+  }
+}
+
+.page-header__logo {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-top: 53px;
   }
 }
 
@@ -43,13 +54,14 @@
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 30px;
+    align-items: flex-end;
+    margin: 0 25px;
   }
 
   @media (min-width: $desktop-width) {

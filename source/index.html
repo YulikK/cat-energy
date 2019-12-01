@@ -12,10 +12,16 @@
   <header class="page-header page-header--index">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <!-- <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="CAT ENERGY"> -->
+        <picture>
+          <source srcset="img/svg/logo-desktop.svg" media="(min-width: 1300px)">
+          <source srcset="img/svg/logo-tablet.svg"  media="(min-width: 768px)">
+          <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" alt="CAT ENERGY">
+        </picture>
       </a>
-      <nav class="main-nav">
-        <!-- <button class="main-nav__open-menu" type="button">Открыть меню</button> -->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__open-menu" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -133,6 +139,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main-nav.js"></script>
 
 </body>
 
