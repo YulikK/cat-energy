@@ -8,12 +8,12 @@
 
 .page-main__wrapper {
   width: 100%;
-  // background-color: $color-green;
-  // background-image: url("../img/jpg/index-background-mobile@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center top;
-  // background-size: 320px, 305px;
-  min-height: 485px; // Временно для сетки
+  background-color: $color-green;
+  background-image: url("../img/jpg/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  // min-height: 485px; // Временно для сетки
 
   &--catalog {
     min-height: 85px; // Временно для сетки
@@ -25,7 +25,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    min-height: 835px; // Временно для сетки
+    // min-height: 835px; // Временно для сетки
+    background: none;
 
     &--catalog {
       min-height: 122px; // Временно для сетки
@@ -40,8 +41,8 @@
     min-width: $desktop-width;
     max-width: $max-width;
     margin: 0 auto;
-    min-height: 698px; // Временно для сетки
-    // background: url("../img/jpg/index-background-desktop@1x.jpg") no-repeat top right;
+    // min-height: 698px; // Временно для сетки
+    background: url("../img/jpg/index-background-desktop@1x.jpg") no-repeat top right;
 
     &--catalog {
       min-height: 157px; // Временно для сетки
@@ -54,7 +55,8 @@
 }
 
 .page-main__head {
-  margin-top: 30px;
+  padding-top: 30px;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: $font-stack-oswald;
   font-size: 36px;
@@ -77,13 +79,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 30px;
+    width: 542px;
+    margin-top: 55px;
+    margin-left: 113px;
+    margin-right: auto;
+    margin-bottom: 44px;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
     color: $text-color-main;
     text-align: left;
-    padding-left: 85px;
-    padding-right: 85px;
+
 
     &--white {
       color: $text-color-main;
@@ -95,7 +101,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 220px;
+    margin: 0;
+    margin-left: 187px;
+    padding-top: 222px;
 
     &--catalog {
       margin-top: 75px;
@@ -130,58 +138,71 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 540px;
     font-size: 20px;
     line-height: 20px;
     color: $text-color-main;
     text-align: left;
-    padding-left: 88px;
-    padding-right: 88px;
-    margin-top: 43px;
+    margin-left: 114px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 188px;
+    margin-top: 41px;
   }
 }
 
 .page-main__image {
+  display: block;
   width: 280px;
   height: 270px;
-  margin-top: 20px;
+  margin-top: 28px;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 709px;
-    height: 609px;
-    top: 210px;
+    margin: 0;
+    margin-left: -359px;
+    width: 718px;
+    height: 617px;
+    top: 204px;
+    left: 50%;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    top: 103px;
-    left: 459px;
+    top: 142px;
+    left: 0;
     width: 552px;
     height: 499px;
+    margin-left: 557px;
+    z-index: 0;
   }
 }
 
 .page-main__search-program {
-  box-sizing: border-box;
   display: block;
   width: 280px;
   margin: 0 auto;
+  margin-top: 4px;
   padding: 11px 73px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
-    margin-left: 88px;
-    margin-top: 33px;
-    padding: 15px 25px;
-    z-index: 2;
+    padding: 16px 25px;
     margin-bottom: 520px;
+    margin-left: 116px;
+    margin-right: auto;
+    margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 35px;
     margin-bottom: 188px;
+    margin-top: 53px;
+    margin-left: 188px;
   }
 }
 
