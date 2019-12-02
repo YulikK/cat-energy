@@ -80,4 +80,9 @@ html {
   line-height: 60px;
   font-weight: 400;
   color: $text-color-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
