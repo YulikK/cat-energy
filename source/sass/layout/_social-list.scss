@@ -80,11 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-bottom: auto;
-    // margin-top: auto;
   }
-
-
 }
 
 .social-list__link {
@@ -92,23 +88,11 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    // widthpadding: 7px 0px;: 30px;
     width: auto;
     height: auto;
     // padding: 7px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    // &--vkontakte {
-    //   padding: 7px 0;
-    // }
-
-    // &--instagram {
-    //   padding: 4px 4px;
-    // }
-    // &--facebook {
-    //   padding: 1px 8px;
-    // }
   }
 }
