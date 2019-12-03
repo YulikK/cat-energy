@@ -1,5 +1,4 @@
 .contacts {
-  // background-color: $color-gray;
   width: 100%;
   margin: 0 auto;
 
@@ -16,6 +15,23 @@
   line-height: 20px;
   color: $text-color-main;
   text-transform: uppercase;
+  width: 130px;
+  margin: 20px;
+  margin-top: 28px;
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+    width: 155px;
+    margin-top: 67px;
+    margin-left: 66px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+  }
 }
 
 .contacts__description {
@@ -23,44 +39,82 @@
   font-size: 14px;
   line-height: 20px;
   color: $text-color-description;
+  width: 145px;
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 28px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 155px;
+    margin-top: 65px;
+    margin-right: 66px;
+    margin-bottom: 59px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-right: 90px;
+  }
 }
 
-// .contacts__map {
-//   width: 320px;
-//   height: 400px;
-// }
+.contacts__map {
+  width: 100%;
+  height: 400px;
+
+  @media (min-width: $desktop-width) {
+    width: $max-width;
+  }
+}
 
 .contacts__wrapper {
-  min-height: 114px; // Временно для сетки
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 0 auto;
-    min-height: 208px; // Временно для сетки
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 570px;
-    min-height: 201px; // Временно для сетки
     top: 95px;
     margin: 0 110px;
+    z-index: 1;
   }
 }
 
 .contacts__wrapper-map {
-  min-height: 362px; // Временно для сетки
   margin: 0 auto;
+  position: relative;
+  background-image: url("../img/png/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 400px; // Временно для сетки
+    background-image: url("../img/png/bg-map-tablet@1x.png");
+    background-size: $tablet-width auto;
   }
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
     max-width: $max-width;
-    min-height: 400px; // Временно для сетки
+    background-image: url("../img/png/bg-map-desktop@1x.png");
+    background-size: $max-width auto;
   }
 }
