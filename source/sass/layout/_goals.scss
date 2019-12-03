@@ -31,6 +31,7 @@
 .goals__item {
   background-color: $color-gray;
   margin: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -38,6 +39,7 @@
     margin-top: 0;
     margin-left: 24px;
     margin-right: 24px;
+    padding-bottom: 63px;
 
     &:last-child {
       margin-bottom: 0;
@@ -166,7 +168,7 @@
   line-height: 16px;
   color: $text-color-main;
   margin-left: 20px;
-  padding-bottom: 22px;
+  // padding-bottom: 22px;
   display: block;
 
   &::after {
@@ -184,11 +186,24 @@
     background-image: url("../img/svg/icon-right-arrow-long.svg");
   }
 
+  &:hover.goals__link::after,
+  &:focus.goals__link::after {
+    background-image: url("../img/svg/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active.goals__link::after {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     margin-left: 54px;
-    padding-bottom: 63px;
+    // padding-bottom: 63px;
 
     &::after {
       margin-top: 5px;
@@ -217,6 +232,7 @@
     margin-top: 27px;
     margin-bottom: 56px;
     margin-right: 285px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -13,6 +13,16 @@
     background-color: $color-green;
   }
 
+  &--green:hover,
+  &--green:focus,
+  &--green:active {
+    background-color: $color-green-grass;
+  }
+
+  &--green:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--gray {
     background-color: $color-gray;
   }

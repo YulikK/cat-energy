@@ -40,6 +40,15 @@
   padding: 21px;
   border-bottom: 1px solid $color-border-gray;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 12px;
@@ -58,5 +67,9 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 24px;
+
+    &--active {
+      border-bottom: 2px solid $color-white;
+    }
   }
 }

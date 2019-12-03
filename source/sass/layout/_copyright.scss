@@ -3,13 +3,42 @@
   font-size: 16px;
   line-height: 16px;
   color: $text-color-description;
+  margin: 24px 0;
 }
 
 .copyright__link {
   text-transform: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  margin-bottom: 10px;
+
+  &:hover path,
+  &:focus path {
+    fill: $color-green-leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 8px;
+    justify-content: flex-end;
+  }
 }
 
 .copyright__logo {
   width: 27px;
   height: 34px;
+
+  path {
+    fill: $color-brownish-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
 }
