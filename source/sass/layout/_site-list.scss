@@ -10,29 +10,6 @@
     align-items: center;
     padding-bottom: 5px;
   }
-
-  a {
-    font-family: $font-stack-oswald;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    color: $text-color-main;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      font-family: $font-stack-oswald;
-      font-size: 18px;
-      line-height: 25px;
-      color: $text-color-black-two;
-      text-align: left;
-    }
-
-    @media (min-width: $desktop-width) {
-      font-size: 20px;
-      line-height: 25px;
-      color: $text-color-support;
-    }
-  }
 }
 
 .site-list__item {
