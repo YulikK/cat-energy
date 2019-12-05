@@ -2,8 +2,6 @@
 //  abstracts
 @import "abstracts/font";
 @import "abstracts/variables";
-//  components
-@import "components/buttons";
 //  layout
 @import "layout/advantages";
 @import "layout/catalog";
@@ -25,6 +23,9 @@
 @import "layout/sample";
 @import "layout/site-list";
 @import "layout/social-list";
+//  components
+@import "components/buttons";
+//
 // @import "abstracts/outlines";
 
 body {

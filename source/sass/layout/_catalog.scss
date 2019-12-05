@@ -1,25 +1,28 @@
 .catalog {
   list-style: none;
   padding: 0;
+  border: 1px solid $color-border-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .catalog__item {
-  min-height: 209px; // Временно для сетки
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 331px;
-    min-height: 441px; // Временно для сетки
-    margin-top: 140px;
+    width: 43%;
+    margin-top: 42px;
+    margin-bottom: 17px;
+    padding: 0;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    min-height: 431px; // Временно для сетки
-    margin-top: 142px;
-
-    &:nth-child(1),
-    &:nth-child(2) {
-      margin-top: 142px;
-    }
+    margin: 0;
+    margin-top: 60px;
   }
 }
