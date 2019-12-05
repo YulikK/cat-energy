@@ -48,7 +48,6 @@
 }
 
 .advantages__item {
-  min-height: 60px;
   margin-bottom: 20px;
   position: relative;
 
@@ -140,7 +139,8 @@
 
 .advantages__description {
   margin-left: 80px;
-  padding-bottom: 6px;
+  padding-top: 2px;
+  padding-bottom: 5px;
 
   br {
     display: none;
@@ -150,8 +150,9 @@
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
-    margin-top: 114px;
+    margin-top: 109px;
     margin-bottom: 58px;
+    padding: 0;
 
     br {
       display: inline;
