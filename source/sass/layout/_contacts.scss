@@ -107,10 +107,18 @@
   background-position: top center;
   background-size: $mobile-width auto;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/png/bg-map-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     background-image: url("../img/png/bg-map-tablet@1x.png");
     background-size: $tablet-width 404px;
+  }
+
+  @media (min-width: $tablet-width) and  (min-resolution: $retina-dppx) {
+    background-image: url("../img/png/bg-map-tablet@2x.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -118,5 +126,9 @@
     max-width: $max-width;
     background-image: url("../img/png/bg-map-desktop@1x.png");
     background-size: $max-width 404px;
+  }
+
+  @media (min-width: $desktop-width) and  (min-resolution: $retina-dppx) {
+    background-image: url("../img/png/bg-map-desktop@2x.png");
   }
 }

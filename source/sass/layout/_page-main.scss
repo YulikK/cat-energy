@@ -42,6 +42,10 @@
         margin-left: 0;
       }
     }
+
+    @media (min-resolution: $retina-dppx) and (min-width: $desktop-width) {
+      background-image: url("../img/jpg/index-background-desktop@2x.jpg");
+    }
   }
 
   .button {
