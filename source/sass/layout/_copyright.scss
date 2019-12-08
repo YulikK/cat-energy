@@ -14,8 +14,8 @@
   margin: 5px auto;
   margin-bottom: 0;
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $color-green-leaf;
   }
 

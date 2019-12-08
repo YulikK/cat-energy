@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack-arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color-description;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-family: $font-stack-oswald;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: $text-color-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

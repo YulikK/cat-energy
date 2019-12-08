@@ -1,6 +1,8 @@
+//colors
 $color-green: #68b738;
 $color-green-grass: #5eaa2f;
 $color-green-leaf: #68b738;
+$color-green-bg: #64a93b;
 $color-gray: #f2f2f2;
 $color-border-gray: #ededed;
 $color-white-three: #ebebeb;
@@ -10,8 +12,11 @@ $color-brownish-grey:#666666;
 $text-color-main: #111111;
 $text-color-black-two: #222222;
 $text-color-support: #ffffff;
-$font-stack-oswald: "Oswald", "Arial", sans-serif;
-$font-stack-arial: "Arial", sans-serif;
+//font
+$font-stack-oswald: "Oswald", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$font-stack-arial: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+//size
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 $max-width: 1440px;
