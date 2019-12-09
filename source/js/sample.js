@@ -3,7 +3,7 @@ var tabletWidth = 768;
 var desktopWidth = 1300;
 var mobilePictureWidth = mobileWidth;
 var tabletPictureWidth = 705;
-var desktopPictureWidth = 636;
+var desktopPictureWidth = 689;
 var pictureWidth = mobileWidth;
 var windowWidth = calcScreen();
 

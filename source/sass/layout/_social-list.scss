@@ -10,10 +10,6 @@
   justify-content: center;
   border-bottom: 1px solid $color-border-gray;
 
-  path {
-    fill: $color-brownish-grey;
-  }
-
   @media (min-width: $tablet-width) {
     border: none;
     margin-bottom: 4px;
@@ -28,10 +24,22 @@
     margin-top: 17px;
     padding-top: 7px;
   }
+
+  path {
+    fill: $color-brownish-grey;
+  }
 }
 
 .social-list__item {
   margin-right: 38px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-right: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -67,24 +75,19 @@
     }
   }
 
-  &:hover path,
-  &:focus path,
-  &:hover circle,
-  &:focus circle {
-    fill: $color-green-leaf;
+  &:hover,
+  &:focus {
+    path,
+    circle {
+      fill: $color-green-leaf;
+    }
   }
 
-  &:active path,
-  &:active circle {
-    opacity: 0.3;
-  }
-
-
-  @media (min-width: $tablet-width) {
-    margin-right: 29px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &:active {
+    path,
+    circle {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -95,7 +98,6 @@
   @media (min-width: $tablet-width) {
     width: auto;
     height: auto;
-    // padding: 7px 0;
     display: flex;
     justify-content: center;
     align-items: center;

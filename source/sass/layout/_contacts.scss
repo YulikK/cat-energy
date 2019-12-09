@@ -46,10 +46,6 @@
   margin-left: 0;
   margin-top: 29px;
 
-  br {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
@@ -58,10 +54,6 @@
     margin-top: 65px;
     margin-right: 66px;
     margin-bottom: 59px;
-
-    br {
-      display: inline;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -89,10 +81,6 @@
   justify-content: space-between;
   background-color: $color-gray;
 
-  &--white {
-    background-color: $color-white;
-  }
-
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 0 auto;
@@ -104,6 +92,10 @@
     top: 95px;
     margin: 0 110px;
     z-index: 1;
+  }
+
+  &--white {
+    background-color: $color-white;
   }
 }
 

@@ -22,15 +22,6 @@
   text-align: center;
   border-bottom: 1px solid $color-border-gray;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
   @media (min-width: $tablet-width) {
     width: auto;
     text-align: left;
@@ -43,6 +34,15 @@
   @media (min-width: $desktop-width) {
     margin-top: 61px;
     margin-bottom: 60px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

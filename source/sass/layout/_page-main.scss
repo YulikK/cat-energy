@@ -16,6 +16,20 @@
     background-size: $mobile-width 305px;
     position: relative;
 
+    @media (min-width: $tablet-width) {
+      position: relative;
+      background: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: $desktop-width;
+      max-width: $max-width;
+      margin: 0 auto;
+      min-height: 700px;
+      background: url("../img/jpg/index-background-desktop@1x.jpg") no-repeat top right;
+      background-size: 720px 696px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -37,20 +51,6 @@
         right: 0;
         left: auto;
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      background: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: $desktop-width;
-      max-width: $max-width;
-      margin: 0 auto;
-      min-height: 700px;
-      background: url("../img/jpg/index-background-desktop@1x.jpg") no-repeat top right;
-      background-size: 720px 696px;
     }
   }
 
@@ -100,20 +100,6 @@
   color: $text-color-support;
   text-align: center;
 
-  &--catalog {
-    padding: 0;
-    color: $text-color-main;
-    text-align: left;
-    margin-bottom: 40px;
-    margin-top: 27px;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-
-  &--form {
-    text-align: left;
-  }
-
   @media (min-width: $tablet-width) {
     width: 542px;
     margin-top: 55px;
@@ -125,14 +111,6 @@
     line-height: 60px;
     color: $text-color-main;
     text-align: left;
-
-    &--catalog {
-      margin-left: 25px;
-    }
-
-    &--form {
-      padding: 0;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -141,8 +119,22 @@
     margin-right: 0;
     margin-bottom: 0;
     padding-top: 222px;
+  }
 
-    &--catalog {
+  &--catalog {
+    padding: 0;
+    color: $text-color-main;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 27px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
       padding: 0;
       margin-top: 71px;
       margin-left: 111px;
@@ -150,8 +142,15 @@
       margin-bottom: 0;
     }
   }
-}
 
+  &--form {
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+}
 
 .page-main__description {
   font-family: $font-stack-oswald;

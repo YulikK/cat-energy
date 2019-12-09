@@ -16,6 +16,14 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
   &:hover svg,
   &:focus svg {
     fill: $color-green-leaf;
@@ -24,25 +32,17 @@
   &:active {
     opacity: 0.3;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 8px;
-    margin-top: 5px;
-    margin-right: 0;
-    margin-left: 0;
-    justify-content: flex-end;
-  }
 }
 
 .copyright__logo {
   width: 27px;
   height: 34px;
 
-  path {
-    fill: $color-brownish-grey;
-  }
-
   @media (min-width: $tablet-width) {
     margin-left: 23px;
+  }
+
+  path {
+    fill: $color-brownish-grey;
   }
 }

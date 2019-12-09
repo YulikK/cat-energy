@@ -1,7 +1,6 @@
 .example {
   background-color: $color-gray;
   width: 100%;
-  // min-height: 705px; // Временно для сетки
   margin-top: 42px;
   margin-right: auto;
   margin-bottom: 0;
@@ -10,17 +9,23 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    // min-height: 1054px; // Временно для сетки
     margin-top: 0;
-    // background-color: $color-white;
-    background: $color-white linear-gradient(90deg, $color-gradient-start 50%, $color-white-three 50%) 0 583px no-repeat;
-    background-size: 100%;
+    background: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    // min-height: 630px; // Временно для сетки
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__information {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    background-image: linear-gradient(0deg, $color-gray, 460px, transparent 10%);
+    opacity: 0.9;
   }
 }
 
@@ -30,6 +35,11 @@
     justify-content: space-between;
     margin-left: 24px;
     margin-right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-left: 110px;
   }
 }
 
@@ -41,6 +51,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 50px;
     margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 13px;
+    margin-left: 111px;
   }
 }
 
@@ -56,6 +71,13 @@
     margin-right: 24px;
     margin-top: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 147px;
+    margin-left: 110px;
+    margin-right: 175px;
+    margin-bottom: 29px;
+  }
 }
 
 .example__goals-list {
@@ -63,6 +85,15 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
 }
 
 .example__goals-item {
@@ -70,28 +101,99 @@
   width: calc(100% / 2);
   position: relative;
 
-  &::before {
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    margin-right: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
+
+  &:not(:last-child)::before {
     content: "";
     position: absolute;
-    width: 77%;
+    width: 124px;
     height: 56px;
     border: 1px solid $color-pinkish-grey;
     border-radius: 3px;
     z-index: -1;
-    left: 18px;
+    left: 50%;
     top: 11px;
+    margin-left: -62px;
 
     @media (min-width: $tablet-width) {
       height: 73px;
-      left: 0;
+      left: 50%;
+      margin-left: -81px;
       top: 24px;
       width: 165px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 162px;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 165px;
-    margin-right: 42px;
+  &:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column-reverse;
+      margin-right: 0;
+      align-items: flex-end;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row-reverse;
+    }
+
+    .example__goals-title,
+    .example__goals-description {
+      font-family: $font-stack-oswald;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text-color-main;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      width: auto;
+      display: block;
+
+      @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: right;
+        width: 190px;
+        margin-top: 0;
+      }
+    }
+
+    .example__goals-description {
+      @media (min-width: $tablet-width) {
+        margin-top: 19px;
+      }
+
+      @media (min-width: $desktop-width) {
+        text-align: left;
+        margin-right: 28px;
+      }
+    }
+
+    .example__goals-title {
+      @media (min-width: $desktop-width) {
+        margin-top: 51px;
+        text-align: left;
+        padding-left: 18px;
+      }
+    }
   }
 }
 
@@ -125,6 +227,10 @@
     line-height: 14px;
     width: 130px;
     background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-gray;
   }
 }
 
