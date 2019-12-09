@@ -1,30 +1,98 @@
 .example {
-  // background-color: $color-gray;
+  background-color: $color-gray;
   width: 100%;
-  min-height: 705px; // Временно для сетки
-  margin: 0 auto;
+  // min-height: 705px; // Временно для сетки
   margin-top: 42px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  opacity: 0.9;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 1054px; // Временно для сетки
-    margin-top: 52px;
+    // min-height: 1054px; // Временно для сетки
+    margin-top: 0;
+    // background-color: $color-white;
+    background: $color-white linear-gradient(90deg, $color-gradient-start 50%, $color-white-three 50%) 0 583px no-repeat;
+    background-size: 100%;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    min-height: 630px; // Временно для сетки
+    // min-height: 630px; // Временно для сетки
     margin: 0 auto;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.example__title {
+  margin-top: 57px;
+  margin-left: 20px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+}
+
+.example__description {
+  margin-left: 20px;
+  margin-right: 21px;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 66px;
   }
 }
 
 .example__goals-list {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__goals-item {
   text-align: center;
+  width: calc(100% / 2);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 77%;
+    height: 56px;
+    border: 1px solid $color-pinkish-grey;
+    border-radius: 3px;
+    z-index: -1;
+    left: 18px;
+    top: 11px;
+
+    @media (min-width: $tablet-width) {
+      height: 73px;
+      left: 0;
+      top: 24px;
+      width: 165px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    margin-right: 42px;
+  }
 }
 
 .example__goals-title {
@@ -33,6 +101,13 @@
   line-height: 24px;
   color: $text-color-main;
   text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 39px;
+  }
 }
 
 .example__goals-description {
@@ -40,6 +115,17 @@
   font-size: 12px;
   line-height: 12px;
   color: $text-color-description;
+  display: block;
+  width: 82px;
+  margin: 0 auto;
+  background-color: $color-gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 130px;
+    background-color: $color-white;
+  }
 }
 
 .example__price {
@@ -49,4 +135,13 @@
   color: $text-color-main;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    width: 190px;
+    margin-top: 45px;
+  }
 }

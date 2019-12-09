@@ -1,9 +1,11 @@
 .social-list {
   list-style: none;
   padding: 0;
-  margin: 22px auto;
   padding-bottom: 18px;
   margin-bottom: 0;
+  margin-top: 22px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid $color-border-gray;
@@ -13,11 +15,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     border: none;
     margin-bottom: 4px;
     padding-top: 20px;
     margin-left: 18px;
+    margin-top: 0;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {

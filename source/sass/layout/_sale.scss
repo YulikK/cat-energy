@@ -3,9 +3,10 @@
   background-image: url("../img/jpg/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  margin: 0 auto;
   margin-top: 39px;
   margin-bottom: 39px;
+  margin-right: auto;
+  margin-left: auto;
   width: 280px;
   position: relative;
 
@@ -41,8 +42,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     margin-left: 80px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     background-image: url("../img/jpg/gift-photo-desktop@1x.jpg");
     width: 245px;
   }

@@ -1,7 +1,9 @@
 .extra-catalog {
   width: 100%;
-  margin: 0 auto;
   margin-top: 27px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;

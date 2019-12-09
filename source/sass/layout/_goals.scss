@@ -189,6 +189,7 @@
 
     position: absolute;
     left: 95px;
+    top: 3px;
     // margin-top: 3px;
     // margin-left: 10px;
 
@@ -228,8 +229,10 @@
 }
 
 .goals__description {
-  margin: 30px 20px;
   margin-bottom: 18px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding-bottom: 22px;
   border-bottom: 1px solid $color-border-gray;
 

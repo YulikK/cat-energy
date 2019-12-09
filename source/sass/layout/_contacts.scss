@@ -16,8 +16,9 @@
   color: $text-color-main;
   text-transform: uppercase;
   width: 130px;
-  margin: 20px;
-  margin-top: 26px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 29px;
   margin-right: 15px;
 
   @media (min-width: $tablet-width) {
@@ -40,9 +41,10 @@
   line-height: 20px;
   color: $text-color-description;
   width: 145px;
-  margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   margin-left: 0;
-  margin-top: 26px;
+  margin-top: 29px;
 
   br {
     display: none;
