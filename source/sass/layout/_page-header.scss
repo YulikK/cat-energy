@@ -54,7 +54,7 @@
     margin: 0 auto;
   }
 
-  a {
+  .site-list__item {
     font-family: $font-stack-oswald;
     font-size: 20px;
     font-weight: 500;
@@ -66,7 +66,7 @@
       font-family: $font-stack-oswald;
       font-size: 18px;
       line-height: 25px;
-      color: $text-color-black-two;
+      color: $color-black-two;
       text-align: left;
     }
 
@@ -90,9 +90,9 @@
       left: 0;
     }
 
-    a {
+    .site-list__item {
       @media (min-width: $desktop-width) {
-        color: $text-color-support;
+        color: $color-white;
       }
     }
   }
@@ -112,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: $desktop-work-width;
     align-items: flex-end;
     margin: 0 auto;
   }

@@ -2,13 +2,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: $color-white linear-gradient(90deg, $color-gradient-start 50%, $color-white-three 50%) 0 172px no-repeat;
+    background: $color-white linear-gradient(90deg, $color-gray 50%, $color-white-three 50%) 0 172px no-repeat;
     background-size: 100%;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    background: $color-white linear-gradient(90deg, $color-gradient-start 45%, $color-white-three 10%) 0 149px no-repeat;
+    background: $color-white linear-gradient(90deg, $color-gray 45%, $color-white-three 10%) 0 149px no-repeat;
   }
 }
 
@@ -64,12 +64,12 @@
   @media (min-width: $tablet-width) {
     width: 705px;
     height: auto;
-    background: $color-white linear-gradient(90deg, $color-gradient-start 344px, $color-white-three 10%) 0 172px no-repeat;
+    background: $color-white linear-gradient(90deg, $color-gray 344px, $color-white-three 10%) 0 172px no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     width: 689px;
-    background: $color-white linear-gradient(90deg, $color-gradient-start 363px, $color-white-three 10%) 0 190px no-repeat;
+    background: $color-white linear-gradient(90deg, $color-gray 363px, $color-white-three 10%) 0 190px no-repeat;
   }
 }
 
@@ -119,7 +119,7 @@
   margin-top: auto;
   margin-bottom: auto;
   outline: none;
-  border: 1px solid $color-pinkish-grey;
+  border: 1px solid $color-pinkish-gray;
   margin-left: 20px;
   margin-right: 11px;
   flex-grow: 1;
@@ -140,7 +140,7 @@
 .sample__slider {
   cursor: ew-resize;
   height: 7px;
-  background-color: #68b738;
+  background-color: $color-green;
   border-radius: 6px;
   margin: 2px;
 
@@ -149,7 +149,7 @@
     height: 34px;
     border-radius: 50%;
     background-color: $color-white;
-    border: solid 1px $color-pinkish-grey;
+    border: solid 1px $color-pinkish-gray;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     position: absolute;
     bottom: -17px;

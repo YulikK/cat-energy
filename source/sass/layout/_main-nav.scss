@@ -22,8 +22,8 @@
       left: 20px;
       width: 25px;
       height: 2px;
-      background-color: #222222;
-      box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+      background-color: $color-black-two;
+      box-shadow: 0 8px 0 0 $color-black-two, 0 16px 0 0 $color-black-two;
     }
 
     .site-list__item {
@@ -43,7 +43,7 @@
         left: 21px;
         width: 24px;
         height: 2px;
-        background-color: #222222;
+        background-color: $color-black-two;
       }
 
       &::before {
@@ -87,7 +87,7 @@
   padding: 0;
   cursor: pointer;
   border: none;
-  background-color: white;
+  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     display: none;

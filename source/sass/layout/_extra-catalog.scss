@@ -69,7 +69,7 @@
 
 .extra-catalog-wrapper {
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: $desktop-work-width;
     display: flex;
     justify-content: space-between;
     margin-bottom: 86px;

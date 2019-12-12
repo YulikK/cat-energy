@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: $desktop-work-width;
     margin: 0 auto;
   }
 }

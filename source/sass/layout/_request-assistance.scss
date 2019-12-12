@@ -1,8 +1,15 @@
 .request-assistance {
-  margin: 0 20px;
+  // margin: 0 20px;
 
-  fieldset {
-    border: none;
+  // fieldset {
+  //   border: none;
+  // }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .button {
@@ -17,11 +24,26 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 0;
-    margin-right: 0;
+  input[type="radio"] + p::before {
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid $color-pinkish-gray;
+    margin-right: 16px;
+    margin-top: 3px;
+  }
+
+  input[type="radio"]:checked + p::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: $color-green;
+    left: 9px;
   }
 }
 
@@ -43,7 +65,16 @@
 }
 
 .request-assistance__main-group {
-  min-height: 214px; // Временно для сетки
+  // min-height: 214px; // Временно для сетки
+  margin-top: 38px;
+  margin-bottom: 7px;
+  border: none;
+  // border-bottom: 1px solid $color-border-gray;
+
+  // .request-assistance__label {
+  //   margin-left: 20px;
+  //   margin-right: 20px;
+  // }
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -59,7 +90,11 @@
 }
 
 .request-assistance__options-group {
-  min-height: 156px; // Временно для сетки
+  // min-height: 156px; // Временно для сетки
+  border: none;
+  border-bottom: 1px solid $color-border-gray;
+  border-top: 1px solid $color-border-gray;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     min-height: 202px; // Временно для сетки
@@ -73,7 +108,23 @@
 }
 
 .request-assistance__contacts-group {
-  min-height: 242px; // Временно для сетки
+  // min-height: 242px; // Временно для сетки
+  border: none;
+  border-top: 3px solid $color-green;
+  margin-bottom: 9px;
+
+  .request-assistance__legend {
+    padding-top: 20px;
+    padding-left: 19px;
+    margin-bottom: 33px;
+    max-width: 222px;
+    padding-right: 22px;
+  }
+
+  .request-assistance__input-text {
+    margin-left: 9px;
+    padding-left: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 66px;
@@ -86,8 +137,29 @@
   }
 }
 
+.request-assistance__wrapper-comment {
+  margin: 0 20px;
+}
+
 .request-assistance__comment-group {
-  min-height: 244px; // Временно для сетки
+  // min-height: 244px; // Временно для сетки
+  border: none;
+  border-top: 3px solid $color-green;
+
+  .request-assistance__input-text {
+    width: 100%;
+    margin: 0;
+    resize: none;
+  }
+
+  .request-assistance__legend {
+    padding-left: 18px;
+    padding-top: 4px;
+    padding-bottom: 11px;
+    max-width: 222px;
+    padding-right: 22px;
+    margin-bottom: 24px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 288px; // Временно для сетки
@@ -119,8 +191,24 @@
   font-family: $font-stack-oswald;
   font-size: 16px;
   line-height: 18px;
-  color: $text-color-black-two;
+  color: $color-black-two;
   text-transform: uppercase;
+  display: flex;
+  margin-bottom: 14px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &:hover:not(.request-assistance__input-text:focus) {
+    .request-assistance__input-text {
+      border: 1px solid $color-pinkish-gray;
+    }
+  }
 }
 
 .request-assistance__input-text {
@@ -129,11 +217,76 @@
   line-height: 18px;
   color: $text-color-description;
   text-transform: uppercase;
+  flex-grow: 1;
+  margin-left: 15px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-bottom: 14px;
+  border: 1px solid $color-pinkish-gray-opacity;
+
+  &:active,
+  &:focus {
+    border: 2px solid $text-color-description;
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:active + .request-assistance__icon,
+  &:focus + .request-assistance__icon {
+    fill: $color-green;
+  }
 }
+
+
+.request-assistance__icon {
+  position: absolute;
+  fill: $color-black-two;
+
+  &--mail {
+    top: 17px;
+    right: 15px;
+    width: 18px;
+    height: 14px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 12px;
+    width: 21px;
+    height: 21px;
+  }
+}
+
 
 .request-assistance__options-list {
   list-style: none;
-  padding: 0;
+  // margin-left: 20px;
+  // margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 13px 0;
+}
+
+.request-assistance__options {
+  display: none;
+}
+
+.request-assistance__options-item {
+  display: flex;
+  align-items: center;
+
+  .request-assistance__label {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .request-assistance__legend {

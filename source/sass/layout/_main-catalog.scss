@@ -5,7 +5,7 @@
   margin-bottom: 0;
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: $desktop-work-width;
   }
 }
 
