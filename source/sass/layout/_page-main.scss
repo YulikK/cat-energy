@@ -62,15 +62,33 @@
     margin-left: 20px;
     margin-right: 20px;
 
+    @media (min-width: $tablet-width) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 110px;
+      margin-top: 71px;
+      margin-right: 110px;
+      width: auto;
+    }
+
     .page-main__description {
       margin-top: 36px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 56px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+      }
     }
   }
 
   .button {
     font-size: 14px;
     line-height: 18px;
-    display: block;
     width: 280px;
     margin-top: 4px;
     margin-bottom: 24px;

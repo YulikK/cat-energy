@@ -37,13 +37,10 @@
   }
 
   .button {
-    display: block;
-    width: 100%;
     padding: 11px 73px;
     margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
-      width: 100%;
       margin-top: 7px;
       margin-bottom: 27px;
       margin-left: 38px;
