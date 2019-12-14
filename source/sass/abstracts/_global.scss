@@ -46,6 +46,14 @@ img {
   overflow: hidden;
 }
 
+.visually-hidden-input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .title {
   font-family: $font-stack-oswald;
   font-size: 36px;
