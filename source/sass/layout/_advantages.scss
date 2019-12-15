@@ -99,6 +99,7 @@
     background-color: $color-green;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 50px auto;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -106,11 +107,13 @@
     }
   }
 
-  &--green.advantages__item::before {
-    background-image: url("../img/png/advantage-leaf@1x.png");
+  &--green {
+    &::before {
+      background-image: url("../img/png/advantage-leaf@1x.png");
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/png/advantage-leaf@2x.png");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/png/advantage-leaf@2x.png");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -121,11 +124,13 @@
     }
   }
 
-  &--easy.advantages__item::before {
-    background-image: url("../img/png/advantage-powder@1x.png");
+  &--easy {
+    &::before {
+      background-image: url("../img/png/advantage-powder@1x.png");
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/png/advantage-powder@2x.png");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/png/advantage-powder@2x.png");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -135,11 +140,13 @@
     }
   }
 
-  &--change.advantages__item::before {
-    background-image: url("../img/png/advantage-dining@1x.png");
+  &--change {
+    &::before {
+      background-image: url("../img/png/advantage-dining@1x.png");
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/png/advantage-dining@2x.png");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/png/advantage-dining@2x.png");
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -149,11 +156,13 @@
     }
   }
 
-  &--fast.advantages__item::before {
-    background-image: url("../img/png/advantage-clock@1x.png");
+  &--fast {
+    &::before {
+      background-image: url("../img/png/advantage-clock@1x.png");
 
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/png/advantage-clock@2x.png");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/png/advantage-clock@2x.png");
+      }
     }
 
     @media (min-width: $tablet-width) {
