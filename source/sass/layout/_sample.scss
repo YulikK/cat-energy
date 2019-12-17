@@ -2,13 +2,17 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: $color-white linear-gradient(90deg, $color-gray 50%, $color-white-three 50%) 0 172px no-repeat;
+    background-color: $color-white;
+    background-image: linear-gradient(90deg, $color-gray 50%, $color-white-three 50%);
+    background-repeat: no-repeat;
+    background-position: 0 172px;
     background-size: 100%;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    background: $color-white linear-gradient(90deg, $color-gray 45%, $color-white-three 10%) 0 149px no-repeat;
+    background-image: linear-gradient(90deg, $color-gray 45%, $color-white-three 10%);
+    background-position: 0 149px;
   }
 }
 
@@ -170,8 +174,8 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     @media (min-width: $tablet-width) {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }

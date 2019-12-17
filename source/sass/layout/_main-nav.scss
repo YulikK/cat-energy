@@ -22,12 +22,12 @@
       left: 20px;
       width: 25px;
       height: 2px;
-      background-color: $color-black-two;
-      box-shadow: 0 8px 0 0 $color-black-two, 0 16px 0 0 $color-black-two;
+      background-color: $color-black;
+      box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
     }
 
     .site-list__item {
-      @media (max-width: $mobile-width-only) {
+      @media (max-width: $tablet-width - 1px) {
         display: none;
       }
     }
@@ -43,7 +43,7 @@
         left: 21px;
         width: 24px;
         height: 2px;
-        background-color: $color-black-two;
+        background-color: $color-black;
       }
 
       &::before {
@@ -58,13 +58,13 @@
 
   &--nojs {
     .main-nav__open-menu {
-      @media (max-width: $mobile-width-only) {
+      @media (max-width: $tablet-width - 1px) {
         display: none;
       }
     }
 
     .site-list__item {
-      @media (max-width: $mobile-width-only) {
+      @media (max-width: $tablet-width - 1px) {
         display: block;
       }
     }

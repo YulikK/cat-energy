@@ -24,8 +24,8 @@
     justify-content: flex-end;
   }
 
-  &:hover svg,
-  &:focus svg {
+  &:focus svg,
+  &:hover svg {
     fill: $color-green-leaf;
   }
 

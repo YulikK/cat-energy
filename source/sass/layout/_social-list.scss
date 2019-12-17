@@ -1,6 +1,8 @@
 .social-list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
   padding-bottom: 18px;
   margin-bottom: 0;
   margin-top: 22px;
@@ -25,7 +27,7 @@
     padding-top: 7px;
   }
 
-  path {
+  svg {
     fill: $color-brownish-gray;
   }
 }
@@ -75,17 +77,15 @@
     }
   }
 
-  &:hover,
-  &:focus {
-    path,
-    circle {
+  &:focus,
+  &:hover {
+    svg {
       fill: $color-green-leaf;
     }
   }
 
   &:active {
-    path,
-    circle {
+    svg {
       opacity: 0.3;
     }
   }

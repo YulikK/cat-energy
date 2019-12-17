@@ -226,8 +226,8 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     &::after {
       background-image: url("../img/svg/icon-right-arrow-verylong.svg");
       width: 34px;

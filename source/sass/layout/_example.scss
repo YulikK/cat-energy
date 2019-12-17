@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-top: 0;
-    background: none;
+    background-color: $color-white;
   }
 
   @media (min-width: $desktop-width) {

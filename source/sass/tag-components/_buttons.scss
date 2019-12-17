@@ -14,8 +14,8 @@
   &--green {
     background-color: $color-green;
 
-    &:hover,
     &:focus,
+    &:hover,
     &:active {
       background-color: $color-green-grass;
     }
@@ -28,8 +28,8 @@
   &--gray {
     background-color: $color-gray;
 
-    &:hover,
     &:focus,
+    &:hover,
     &:active {
       background-color: $color-white-three;
     }

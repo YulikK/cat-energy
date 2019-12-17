@@ -40,8 +40,8 @@
       margin-right: 19px;
     }
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       border: 1px solid $color-focus-border;
     }
   }
@@ -80,8 +80,8 @@
       margin-top: 0;
     }
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       border: 1px solid $color-focus-border;
     }
   }
@@ -159,9 +159,10 @@
   font-family: $font-stack-oswald;
   font-size: 16px;
   line-height: 18px;
-  color: $color-black-two;
+  color: $color-black;
   text-transform: uppercase;
   display: flex;
+  align-items: center;
   margin-bottom: 14px;
   position: relative;
   margin-left: 20px;
@@ -210,8 +211,8 @@
     margin-left: 18px;
   }
 
-  &:active,
-  &:focus {
+  &:focus,
+  &:active {
     border: 2px solid $text-color-description;
     padding-right: 11px;
     padding-top: 12px;
@@ -227,8 +228,8 @@
     }
   }
 
-  &:active + .request-assistance__icon,
-  &:focus + .request-assistance__icon {
+  &:focus + .request-assistance__icon,
+  &:active + .request-assistance__icon {
     fill: $color-green;
   }
 }
@@ -236,7 +237,7 @@
 
 .request-assistance__icon {
   position: absolute;
-  fill: $color-black-two;
+  fill: $color-black;
 
   &--mail {
     top: 17px;

@@ -24,10 +24,9 @@
   }
 
   &--more {
-    background: none;
-
     @media (min-width: $tablet-width) {
       background-color: $color-white;
+      background-image: none;
       border: 1px solid $color-border-gray;
       margin-top: 123px;
     }

@@ -44,7 +44,7 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper page-main__wrapper--form">
-      <h1 class="page-main__head page-main__head--form">Подбор программы</h1>
+      <h1 class="page-main__head page-main__head--form main-head main-head--form">Подбор программы</h1>
       <p class="page-main__description">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
     </div>
     <form class="request-assistance" action="https://echo.htmlacademy.ru" method="post">
@@ -52,15 +52,15 @@
         <fieldset class="request-assistance__group group group--main">
           <h2 class="visually-hidden">Главная информация о коте</h2>
           <label class="request-assistance__label" for="name">
-            <p>Имя:*</p>
+            <span>Имя:*</span>
             <input class="request-assistance__input-text" type="text" id="name" name="name" placeholder="Барсик">
           </label>
           <label class="request-assistance__label" for="weight">
-            <p>Вес (кг):*</p>
+            <span>Вес (кг):*</span>
             <input class="request-assistance__input-text" type="text" id="weight" name="weight" placeholder="7">
           </label>
           <label class="request-assistance__label" for="age">
-            <p>Возраст (лет):</p>
+            <span>Возраст (лет):</span>
             <input class="request-assistance__input-text" type="text" id="age" name="age" placeholder="7">
           </label>
         </fieldset>
@@ -71,21 +71,21 @@
               <label class="request-assistance__label label-modification label-modification--radio" for="slim">
                 <input class="visually-hidden-input" id="slim" name="program" type="radio" value="slim" checked>
                 <span class="request-assistance__indicator"></span>
-                <p>Похудение</p>
+                <span>Похудение</span>
               </label>
             </li>
             <li class="request-assistance__options-item">
               <label class="request-assistance__label label-modification label-modification--radio" for="pro">
                 <input class="visually-hidden-input" id="pro" name="program" type="radio" value="pro">
                 <span class="request-assistance__indicator"></span>
-                <p>Набор массы</p>
+                <span>Набор массы</span>
               </label>
             </li>
             <li class="request-assistance__options-item">
               <label class="request-assistance__label label-modification label-modification--radio" for="advice">
                 <input class="visually-hidden-input" id="advice" name="program" type="radio" value="advice">
                 <span class="request-assistance__indicator"></span>
-                <p>Не знаю (нужен ваш совет)</p>
+                <span>Не знаю (нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -97,7 +97,7 @@
         </legend>
         <div class="request-assistance__wrapper">
         <label class="request-assistance__label" for="email">
-          <p>E-mail:*</p>
+          <span>E-mail:*</span>
           <input class="request-assistance__input-text" type="email" id="email" name="email"
             placeholder="kuklachev@gmail.com">
           <svg class="request-assistance__icon request-assistance__icon--mail" version="1.1" width="18"
@@ -108,7 +108,7 @@
           </svg>
         </label>
         <label class="request-assistance__label" for="tel">
-          <p>Телефон:*</p>
+          <span>Телефон:*</span>
           <input class="request-assistance__input-text" type="tel" id="tel" name="tel"
             pattern="\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="8 (960) 900-60-90">
           <svg class="request-assistance__icon request-assistance__icon--phone" version="1.1" width="21"
@@ -142,28 +142,28 @@
             <label class="request-assistance__label label-modification label-modification--checkbox" for="sugar">
               <input class="visually-hidden-input" type="checkbox" name="sugar" id="sugar" checked>
               <span class="request-assistance__indicator"></span>
-              <p>Сахарозаменитель</p>
+              <span>Сахарозаменитель</span>
             </label>
           </li>
           <li class="request-assistance__options-item">
             <label class="request-assistance__label label-modification label-modification--checkbox" for="water">
               <input class="visually-hidden-input" type="checkbox" name="water" id="water">
               <span class="request-assistance__indicator"></span>
-              <p>Питьевая вода</p>
+              <span>Питьевая вода</span>
             </label>
           </li>
           <li class="request-assistance__options-item">
             <label class="request-assistance__label label-modification label-modification--checkbox" for="milk">
               <input class="visually-hidden-input" type="checkbox" name="milk" id="milk">
               <span class="request-assistance__indicator"></span>
-              <p>Молоко</p>
+              <span>Молоко</span>
             </label>
           </li>
           <li class="request-assistance__options-item">
             <label class="request-assistance__label label-modification label-modification--checkbox" for="vitamins">
               <input class="visually-hidden-input" type="checkbox" name="vitamins" id="vitamins">
               <span class="request-assistance__indicator"></span>
-              <p>Витамины</p>
+              <span>Витамины</span>
             </label>
           </li>
         </ul>
@@ -182,7 +182,7 @@
       <div class="contacts__wrapper-map">
         <iframe class="contacts__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003203!2d30.32085871624636!3d59.93871916905401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1575346511406!5m2!1sru!2sby"
-          frameborder="0" style="border: 0;" allowfullscreen="">
+          style="border: 0;" allowfullscreen="">
         </iframe>
       </div>
     </section>

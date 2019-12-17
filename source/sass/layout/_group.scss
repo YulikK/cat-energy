@@ -122,8 +122,8 @@
         height: 172px;
       }
 
-      &:active,
-      &:focus {
+      &:focus,
+      &:active {
         @media (min-width: $tablet-width) {
           padding-top: 13px;
         }
