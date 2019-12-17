@@ -1,25 +1,52 @@
 .sale {
-  // background-color: $color-green;
-  // background-image: url("../img/jpg/gift-photo-mobile@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: top center;
-  margin: 0 auto;
+  background-color: $color-green;
+  background-image: url("../img/jpg/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
   margin-top: 39px;
-  min-height: 289px; // Временно для сетки
   margin-bottom: 39px;
+  margin-right: auto;
+  margin-left: auto;
   width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: 69px;
     margin-bottom: 76px;
-    min-height: 200px; // Временно для сетки
     width: 708px;
+    background-image: url("../img/jpg/gift-photo-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    min-height: 289px; // Временно для сетки
+    margin-left: 80px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-image: url("../img/jpg/gift-photo-desktop@1x.jpg");
     width: 245px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    left: 50%;
+    margin-left: -27px;
+    top: 65px;
+    background-color: $color-white;
+    mask-image: url("../img/svg/icon-gift.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 67px;
+      left: 113px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 61px;
+      left: 50%;
+    }
   }
 }
 
@@ -33,6 +60,24 @@
   font-family: $font-stack-arial;
   font-size: 16px;
   line-height: 20px;
-  color: $text-color-support;
+  color: $color-white;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 40px;
+  width: 180px;
+  margin: 16px auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 70px;
+    text-align: left;
+    margin-left: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 16px auto;
+    text-align: center;
+    padding-top: 172px;
+    padding-bottom: 20px;
+  }
 }

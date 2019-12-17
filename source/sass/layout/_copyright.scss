@@ -3,13 +3,46 @@
   font-size: 16px;
   line-height: 16px;
   color: $text-color-description;
+  margin: 24px 0;
 }
 
 .copyright__link {
   text-transform: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  &:focus svg,
+  &:hover svg {
+    fill: $color-green-leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
   width: 27px;
   height: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+
+  svg {
+    fill: $color-brownish-gray;
+  }
 }

@@ -1,5 +1,5 @@
 .page-footer {
-  // background-color: $color-gray;
+  background-color: $color-gray;
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
@@ -16,32 +16,44 @@
 .page-footer__logo {
   width: 100%;
   margin: 0 auto;
-  min-height: 94px; // Временно для сетки
+  padding-top: 39px;
+  padding-bottom: 28px;
   display: block;
+  text-align: center;
+  border-bottom: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
-    width: 235px;
-    min-height: 45px; // Временно для сетки
-    margin-bottom: 55px;
-    margin-top: 49px;
+    width: auto;
+    text-align: left;
+    align-items: center;
+    padding: 0;
+    margin: 62px 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
-    margin-left: 0;
+    margin-top: 61px;
+    margin-bottom: 60px;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .page-footer__social {
   width: 100%;
   margin: 0 auto;
-  min-height: 62px; // Временно для сетки
 
   @media (min-width: $tablet-width) {
-    width: 235px;
-    min-height: 45px; // Временно для сетки
-    margin-bottom: 55px;
-    margin-top: 49px;
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,13 +65,10 @@
 .page-footer__copyright {
   width: 100%;
   margin: 0 auto;
-  min-height: 78px; // Временно для сетки
 
   @media (min-width: $tablet-width) {
-    width: 235px;
-    min-height: 45px; // Временно для сетки
-    margin-bottom: 55px;
-    margin-top: 49px;
+    width: auto;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,14 +78,18 @@
 }
 
 .page-footer__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: 0 25px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    max-width: $desktop-work-width;
     width: 100%;
     margin: 0 auto;
   }
