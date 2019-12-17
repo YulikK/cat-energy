@@ -1,0 +1,25 @@
+.main-head {
+  font-family: $font-stack-oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $color-white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $text-color-main;
+    text-align: left;
+  }
+
+  &--catalog {
+    color: $text-color-main;
+    text-align: left;
+  }
+
+  &--form {
+    text-align: left;
+    color: $text-color-main;
+  }
+}

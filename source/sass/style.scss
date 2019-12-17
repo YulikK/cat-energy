@@ -1,8 +1,7 @@
 //  abstracts
 @import "abstracts/font";
 @import "abstracts/variables";
-//  components
-@import "components/buttons";
+@import "abstracts/global";
 //  layout
 @import "layout/advantages";
 @import "layout/catalog";
@@ -12,8 +11,11 @@
 @import "layout/extra-catalog";
 @import "layout/extra-list";
 @import "layout/goals";
+@import "layout/group";
 @import "layout/main-nav";
 @import "layout/main-catalog";
+@import "layout/main-head";
+@import "layout/main_offer";
 @import "layout/page-header";
 @import "layout/page-main";
 @import "layout/page-footer";
@@ -24,40 +26,7 @@
 @import "layout/sample";
 @import "layout/site-list";
 @import "layout/social-list";
+//tag-components
+@import "tag-components/buttons";
+//
 // @import "abstracts/outlines";
-
-body {
-  font-family: $font-stack-arial;
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-color-description;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.title {
-  font-family: $font-stack-oswald;
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
-  color: $text-color-main;
-}
