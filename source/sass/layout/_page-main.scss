@@ -75,7 +75,7 @@
 }
 
 .page-main__head {
-  padding-top: 30px;
+  padding-top: 27px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -105,6 +105,8 @@
 
     @media (min-width: $tablet-width) {
       margin-left: 25px;
+      margin-bottom: 44px;
+      margin-top: 55px;
     }
 
     @media (min-width: $desktop-width) {
