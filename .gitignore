@@ -11,3 +11,4 @@ node_modules/
 npm-debug.*
 Thumbs.db
 source/sass/abstracts/_outlines.scss
+source/img-hd/preview/

@@ -32,6 +32,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  svg {
+    fill: $color-brownish-gray;
+  }
 }
 
 .copyright__logo {
@@ -40,9 +44,5 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
-  }
-
-  svg {
-    fill: $color-brownish-gray;
   }
 }

@@ -15,7 +15,8 @@
   }
 
   &--closed {
-    .main-nav__open-menu::before {
+    .main-nav__open-menu::before,
+    .main-nav__open-menu::after {
       content: "";
       position: absolute;
       top: 23px;
@@ -24,6 +25,7 @@
       height: 2px;
       background-color: $color-black;
       box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
+      transition: all 0.25s ease-in-out;
     }
 
     .site-list__item {
@@ -44,6 +46,8 @@
         width: 24px;
         height: 2px;
         background-color: $color-black;
+        transform: translate(-50%, -50%);
+        transition: all 0.25s ease-in-out;
       }
 
       &::before {
