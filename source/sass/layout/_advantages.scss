@@ -1,12 +1,17 @@
 .advantages {
   width: 100%;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   margin-left: auto;
   margin-right: auto;
 
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-gray;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
+    border-bottom: none;
   }
 }
 
@@ -16,13 +21,13 @@
   margin-top: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 51px;
-    margin-left: 25px;
+    margin-top: 44px;
+    margin-left: 30px;
     margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 72px;
+    margin-top: 52px;
     margin-left: 110px;
   }
 }
@@ -41,8 +46,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 0;
-    margin-bottom: 5px;
-    margin-left: 24px;
+    margin-bottom: 2px;
+    margin-left: 30px;
     margin-right: 95px;
   }
 
@@ -50,7 +55,7 @@
     justify-content: space-between;
     margin-top: 72px;
     margin-left: 110px;
-    margin-right: 100px;
+    margin-right: 104px;
   }
 }
 
@@ -65,7 +70,9 @@
     width: 260px;
     margin-bottom: 42px;
     margin-right: 0;
-    margin-top: 37px;
+    margin-top: 35px;
+    display: flex;
+    align-items: start;
 
     &::after {
       content: "";
@@ -119,10 +126,14 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
+    &::after {
+      @media (min-width: $tablet-width) {
         content: "1";
-        right: 26px;
+        right: 31px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 21px;
       }
     }
   }
@@ -136,9 +147,14 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
+    &::after {
+      @media (min-width: $tablet-width) {
         content: "2";
+        right: 14px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 5px;
       }
     }
   }
@@ -152,9 +168,14 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
+    &::after {
+      @media (min-width: $tablet-width) {
         content: "3";
+        right: 13px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 4px;
       }
     }
   }
@@ -168,10 +189,14 @@
       }
     }
 
-    @media (min-width: $tablet-width) {
-      &::after {
+    &::after {
+      @media (min-width: $tablet-width) {
         content: "4";
-        right: 8px;
+        right: 10px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: 2px;
       }
     }
   }
@@ -187,7 +212,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
-    margin-top: 114px;
+    margin-top: 112px;
     margin-bottom: 58px;
     padding: 0;
   }

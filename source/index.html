@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <script src="js/picturefill.js" async></script>
   <script src="js/sample.js"></script>
@@ -28,9 +28,7 @@
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__open-menu" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <button class="main-nav__open-menu" type="button" aria-label="Открыть - закрыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
@@ -61,7 +59,7 @@
       <a href="form.html" class="button button--green">Подобрать программу</a>
     </div>
     <section class="goals">
-      <h2 class="visually-hidden">Цели</h2>
+      <h2 class="visually-hidden" hidden>Цели</h2>
       <ul class="goals__list">
         <li class="goals__item goals__item--slim">
           <h3 class="goals__title">Похудение</h3>
@@ -96,13 +94,12 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__information">
-        <h2 class="example__title title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16
-          часов в день.</p>
-        <div class="example__wrapper">
+      <h2 class="example__title title">Живой пример</h2>
+      <div class="example__wrapper">
+        <div class="example__information">
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.</p>
           <ul class="example__goals-list">
             <li class="example__goals-item">
               <p class="example__goals-title">5 кг</p>
@@ -118,43 +115,44 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="sample">
-        <div class="sample__wrapper">
-          <div class="sample__photo-wrapper">
-            <picture>
-              <source srcset="img/png/after-desktop@1x.png 1x, img/png/after-desktop@2x.png 2x"
-                media="(min-width: 1300px)">
-              <source srcset="img/png/after-tablet@1x.png 1x, img/png/after-tablet@2x.png 2x"
-                media="(min-width: 768px)">
-              <img class="sample__photo" src="img/png/after-mobile@1x.png"
-                srcset="img/png/after-mobile@1x.png 1x, img/png/after-mobile@2x.png 2x" alt="Фото до" width="320"
-                height="240">
-            </picture>
-          </div>
-          <div class="sample__photo-wrapper sample__photo-wrapper--overlay">
-            <picture>
-              <source srcset="img/png/before-desktop@1x.png 1x, img/png/before-desktop@2x.png 2x"
-                media="(min-width: 1300px)">
-              <source srcset="img/png/before-tablet@1x.png 1x, img/png/before-tablet@2x.png 2x"
-                media="(min-width: 768px)">
-              <img class="sample__photo" src="img/png/before-mobile@1x.png"
-                srcset="img/png/before-mobile@1x.png 1x, img/png/before-mobile@2x.png 2x" alt="Фото после" width="320"
-                height="240">
-            </picture>
+        <div class="sample">
+          <div class="sample__wrapper">
+            <div class="sample__photo-wrapper">
+              <picture>
+                <source srcset="img/png/after-desktop@1x.png 1x, img/png/after-desktop@2x.png 2x"
+                  media="(min-width: 1300px)">
+                <source srcset="img/png/after-tablet@1x.png 1x, img/png/after-tablet@2x.png 2x"
+                  media="(min-width: 768px)">
+                <img class="sample__photo" src="img/png/after-mobile@1x.png"
+                  srcset="img/png/after-mobile@1x.png 1x, img/png/after-mobile@2x.png 2x" alt="Фото до" width="320"
+                  height="240">
+              </picture>
+            </div>
+            <div class="sample__photo-wrapper sample__photo-wrapper--overlay">
+              <picture>
+                <source srcset="img/png/before-desktop@1x.png 1x, img/png/before-desktop@2x.png 2x"
+                  media="(min-width: 1300px)">
+                <source srcset="img/png/before-tablet@1x.png 1x, img/png/before-tablet@2x.png 2x"
+                  media="(min-width: 768px)">
+                <img class="sample__photo" src="img/png/before-mobile@1x.png"
+                  srcset="img/png/before-mobile@1x.png 1x, img/png/before-mobile@2x.png 2x" alt="Фото после" width="320"
+                  height="240">
+              </picture>
 
+            </div>
           </div>
-        </div>
-        <div class="sample__range-wrapper">
-          <p class="sample__start">было</p>
-          <div class="sample__range"></div>
-          <p class="sample__end">стало</p>
+          <div class="sample__range-wrapper">
+            <p class="sample__start">было</p>
+            <div class="sample__range" aria-label="Ползунок для примера было - стало">
+            </div>
+            <p class="sample__end">стало</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper contacts__wrapper--white">
-        <h2 class="visually-hidden">Сотрудничество</h2>
+        <h2 class="visually-hidden" hidden>Сотрудничество</h2>
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
         <div class="contacts__description">
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
@@ -178,25 +176,25 @@
         <li class="social-list__item social-list__item--vkontakte">
           <a class="social-list__link" href="#">
             <svg class="site-list__icon" width="22" height="12">
+              <title>Мы в Вконтакте</title>
               <use xlink:href="#icon-vk"></use>
             </svg>
-            <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item social-list__item--instagram">
           <a class="social-list__link" href="#">
             <svg class="site-list__icon" width="17" height="17">
+              <title>Мы в Инстаграмме</title>
               <use xlink:href="#icon-insta"></use>
             </svg>
-            <span class="visually-hidden">Мы в Инстаграмме</span>
           </a>
         </li>
         <li class="social-list__item social-list__item--facebook">
           <a class="social-list__link" href="#">
             <svg class="site-list__icon" width="10" height="19">
+              <title>Мы в Фейсбуке</title>
               <use xlink:href="#icon-fb"></use>
             </svg>
-            <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </li>
       </ul>
@@ -204,9 +202,9 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__title">HTML Academy</p>
           <svg class="copyright__logo" width="27" height="34">
+            <title>Профессиональный онлайн‑курс HTML и CSS, уровень 2</title>
             <use xlink:href="#htmlacademy"></use>
           </svg>
-          <span class="visually-hidden">Профессиональный онлайн‑курс HTML и CSS, уровень 2</span>
         </a>
       </div>
     </div>

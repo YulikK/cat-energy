@@ -10,15 +10,14 @@
   margin-left: auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-bottom: 4px;
-    padding-top: 20px;
     margin-left: 18px;
-    margin-top: 0;
     margin-right: 0;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {

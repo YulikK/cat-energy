@@ -1,7 +1,8 @@
 .page-main {
+  min-width: $mobile-width;
+
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
-    max-width: $max-width;
     margin: 0 auto;
   }
 }
@@ -9,19 +10,13 @@
 .page-main__wrapper {
   width: 100%;
 
-  &--index {
-    @media (min-width: $desktop-width) {
-      margin: 0 auto;
-      min-height: 700px;
-    }
-  }
-
   &--form {
     margin-left: 20px;
     margin-right: 20px;
+    width: auto;
 
     @media (min-width: $tablet-width) {
-      margin-left: 24px;
+      margin-left: 29px;
     }
 
     @media (min-width: $desktop-width) {
@@ -52,7 +47,7 @@
     margin-bottom: 24px;
     margin-right: auto;
     margin-left: auto;
-    padding: 11px 73px;
+    padding: 11px 0;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -60,16 +55,16 @@
       text-align: left;
       width: 245px;
       padding: 16px 25px;
-      margin-bottom: 538px;
-      margin-left: 116px;
+      margin-bottom: 529px;
+      margin-left: 119px;
       margin-right: auto;
-      margin-top: 48px;
+      margin-top: 47px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 268px;
       margin-top: 53px;
-      margin-left: 188px;
+      margin-left: 190px;
     }
   }
 }
@@ -81,15 +76,15 @@
 
   @media (min-width: $tablet-width) {
     width: 542px;
-    margin-top: 55px;
-    margin-left: 113px;
+    margin-top: 52px;
+    margin-left: 117px;
     margin-right: auto;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 187px;
+    margin-left: 190px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -104,9 +99,11 @@
     margin-left: 20px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 25px;
-      margin-bottom: 44px;
-      margin-top: 55px;
+      margin-left: 30px;
+      margin-bottom: 34px;
+      margin-top: 52px;
+      margin-right: 30px;
+      width: auto;
     }
 
     @media (min-width: $desktop-width) {
@@ -159,12 +156,12 @@
     line-height: 20px;
     color: $text-color-main;
     text-align: left;
-    margin-left: 114px;
+    margin-left: 118px;
     margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 188px;
+    margin-left: 190px;
     margin-top: 41px;
   }
 }
@@ -180,23 +177,23 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    margin-left: -359px;
+    margin-left: -357px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
-    width: 718px;
-    height: 617px;
-    top: 204px;
+    width: 712px;
+    height: 610px;
+    top: 200px;
     left: 50%;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     top: 142px;
-    left: 0;
+    left: 50%;
     width: 552px;
     height: 499px;
-    margin-left: 557px;
+    margin-left: -160px;
     z-index: 0;
   }
 }
