@@ -24,13 +24,11 @@
         <picture>
           <source srcset="img/svg/logo-desktop.svg" media="(min-width: 1300px)">
           <source srcset="img/svg/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" alt="CAT ENERGY">
+          <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="CAT ENERGY">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__open-menu" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <button class="main-nav__open-menu" type="button" aria-label="Открыть - закрыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -53,7 +51,7 @@
     <form class="request-assistance" action="https://echo.htmlacademy.ru" method="post">
       <div class="request-assistance__wrapper-group">
         <fieldset class="request-assistance__group group group--main">
-          <h2 class="visually-hidden">Главная информация о коте</h2>
+          <h2 class="visually-hidden" hidden>Главная информация о коте</h2>
           <label class="request-assistance__label" for="name">
             <span>Имя:*</span>
             <input class="request-assistance__input-text" type="text" id="name" name="name" placeholder="Барсик">
@@ -68,7 +66,7 @@
           </label>
         </fieldset>
         <fieldset class="request-assistance__group group group--options group--gray-border">
-          <h2 class="visually-hidden">Программа</h2>
+          <h2 class="visually-hidden" hidden>Программа</h2>
           <ul class="request-assistance__options-list">
             <li class="request-assistance__options-item">
               <label class="request-assistance__label label-modification label-modification--radio" for="slim">
@@ -167,8 +165,8 @@
       </div>
     </form>
     <section class="contacts">
-      <div class="contacts__wrapper contacts__wrapper--white">
-        <h2 class="visually-hidden">Сотрудничество</h2>
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden" hidden>Сотрудничество</h2>
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
         <div class="contacts__description">
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
@@ -192,25 +190,25 @@
         <li class="social-list__item social-list__item--vkontakte">
           <a class="social-list__link" href="#">
             <svg class="site-list__icon" width="22" height="12">
-              <use xlink:href="img/svg/sprite.svg#icon-vk"></use>
+              <title>Мы в Вконтакте</title>
+              <use xlink:href="#icon-vk"></use>
             </svg>
-            <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item social-list__item--instagram">
           <a class="social-list__link" href="#">
             <svg class="site-list__icon" width="17" height="17">
+              <title>Мы в Инстаграмме</title>
               <use xlink:href="#icon-insta"></use>
             </svg>
-            <span class="visually-hidden">Мы в Инстаграмме</span>
           </a>
         </li>
         <li class="social-list__item social-list__item--facebook">
           <a class="social-list__link" href="#">
             <svg class="site-list__icon" width="10" height="19">
+              <title>Мы в Фейсбуке</title>
               <use xlink:href="#icon-fb"></use>
             </svg>
-            <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </li>
       </ul>
@@ -218,14 +216,15 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__title">HTML Academy</p>
           <svg class="copyright__logo" width="27" height="34">
+            <title>Профессиональный онлайн‑курс HTML и CSS, уровень 2</title>
             <use xlink:href="#htmlacademy"></use>
           </svg>
-          <span class="visually-hidden">Профессиональный онлайн‑курс HTML и CSS, уровень 2</span>
         </a>
       </div>
     </div>
   </footer>
   <script src="js/main-nav.js"></script>
+  <script src="js/form-check.js"></script>
 </body>
 
 </html>

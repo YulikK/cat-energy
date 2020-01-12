@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   border: none;
+  min-width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -23,38 +24,42 @@
     margin-top: 37px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 53px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 0;
       margin-bottom: 0;
+      width: 50%;
     }
   }
 
   &--options {
     @media (min-width: $desktop-width) {
-      margin-left: 82px;
+      margin-left: 79px;
       margin-bottom: 0;
+      width: 50%;
     }
   }
 
   &--contacts {
     @media (min-width: $tablet-width) {
-      margin-bottom: 45px;
+      margin-bottom: 42px;
     }
 
     .request-assistance__legend {
       margin-bottom: 33px;
 
       @media (min-width: $tablet-width) {
-        margin-bottom: 55px;
+        margin-bottom: 54px;
+        margin-left: 30px;
+        padding-right: 40px;
       }
 
       @media (min-width: $desktop-width) {
         margin-left: 70px;
         padding-right: 43px;
-        margin-bottom: 52px;
+        margin-bottom: 55px;
       }
     }
 
@@ -74,10 +79,24 @@
       margin-left: 0;
       margin-right: 0;
 
+      @media (min-width: $tablet-width) {
+        margin-bottom: 19px;
+      }
+
       @media (min-width: $desktop-width) {
         width: 47%;
         margin-left: 0;
         margin-right: 0;
+      }
+    }
+
+    label[for="email"] {
+      @media (min-width: $tablet-width) {
+        margin-left: 2px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-right: 5px;
       }
     }
 
@@ -115,11 +134,11 @@
 
       @media (min-width: $tablet-width) {
         padding-top: 14px;
-        height: 177px;
+        height: 174px;
       }
 
       @media (min-width: $desktop-width) {
-        height: 172px;
+        height: 177px;
       }
 
       &:focus,
@@ -136,8 +155,10 @@
       margin-bottom: 24px;
 
       @media (min-width: $tablet-width) {
-        padding-right: 43px;
-        margin-bottom: 65px;
+        margin-bottom: 62px;
+        padding-right: 39px;
+        margin-left: 30px;
+        padding-bottom: 14px;
       }
 
       @media (min-width: $desktop-width) {
@@ -150,8 +171,8 @@
       margin: 0 20px;
 
       @media (min-width: $tablet-width) {
-        margin-left: 65px;
-        margin-right: 62px;
+        margin-left: 70px;
+        margin-right: 67px;
       }
 
       @media (min-width: $desktop-width) {
@@ -164,20 +185,28 @@
   &--extra {
     margin-bottom: 12px;
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 16px;
+    }
+
     .request-assistance__legend {
       padding-top: 4px;
-      padding-bottom: 14px;
+      padding-bottom: 18px;
       padding-right: 24px;
       margin-bottom: 0;
 
       @media (min-width: $tablet-width) {
         margin-bottom: 21px;
-        padding-right: 47px;
+        padding-right: 41px;
+        margin-left: 30px;
+        padding-top: 2px;
+        padding-bottom: 13px;
       }
 
       @media (min-width: $desktop-width) {
         margin-left: 69px;
         padding-right: 42px;
+        margin-bottom: 22px;
       }
     }
 
@@ -193,8 +222,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-bottom: 14px;
-        padding-left: 67px;
-        padding-right: 67px;
+        padding-left: 70px;
+        padding-right: 73px;
+        padding-top: 20px;
       }
 
       @media (min-width: $desktop-width) {
@@ -207,12 +237,22 @@
     .request-assistance__options-item {
       @media (min-width: $tablet-width) {
         width: calc(100% / 2 - 5%);
-        margin-bottom: 23px;
+        margin-bottom: 26px;
       }
 
       @media (min-width: $desktop-width) {
         width: calc(100% / 4 - 5%);
         margin-bottom: 0;
+      }
+
+      &:last-child {
+        @media (min-width: $tablet-width) {
+          margin-bottom: 26px;
+        }
+
+        @media (min-width: $desktop-width) {
+          margin-bottom: 0;
+        }
       }
     }
   }

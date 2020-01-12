@@ -5,7 +5,7 @@ var mobilePictureWidth = mobileWidth;
 var tabletPictureWidth = 705;
 var desktopPictureWidth = 689;
 var pictureWidth = mobileWidth;
-var windowWidth = calcScreen();
+var windowW = calcScreen();
 
 function calcScreen() {
   windowW = Math.max(document.documentElement.clientWidth, window.innerWidth);
@@ -35,7 +35,7 @@ function initComparisons() {
   function compareImages(img) {
     var slider, img, clicked = 0, w, h;
     var sampleRange = document.querySelector('.sample__range');
-
+    windowW = Math.max(document.documentElement.clientWidth, window.innerWidth);
     if (windowW >= tabletWidth) pictureWidth = tabletPictureWidth;
     if (windowW >= desktopWidth) pictureWidth = desktopPictureWidth;
     w = sampleRange.offsetWidth;
@@ -44,6 +44,7 @@ function initComparisons() {
 
     slider = document.createElement("DIV");
     slider.setAttribute("class", "sample__slider");
+    slider.setAttribute("tabindex", "0");
     if (windowW < tabletWidth) {
       slider.style.width = 50 + "%";
     }

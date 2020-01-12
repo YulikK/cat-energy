@@ -50,12 +50,12 @@
     left: 50%;
     margin-left: -27px;
     top: 65px;
-    background-color: $color-white;
-    mask-image: url("../img/svg/icon-gift.svg");
+    background-image: url("../img/svg/icon-gift.svg");
+    background-size: 56px 61px;
 
     @media (min-width: $tablet-width) {
-      top: 67px;
-      left: 113px;
+      top: 65px;
+      left: 117px;
     }
 
     @media (min-width: $desktop-width) {
@@ -83,8 +83,8 @@
   margin: 16px auto;
 
   @media (min-width: $tablet-width) {
-    padding-top: 74px;
-    padding-bottom: 70px;
+    padding-top: 72px;
+    padding-bottom: 68px;
     text-align: left;
     margin-left: 60%;
   }

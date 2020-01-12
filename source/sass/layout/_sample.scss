@@ -11,8 +11,13 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    background-image: linear-gradient(90deg, $color-gray 45%, $color-white-three 10%);
-    background-position: 0 149px;
+    background-image: linear-gradient(90deg, $color-gray 323px, $color-white-three 10%);
+    background-position: 0 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
@@ -24,13 +29,17 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 69px;
+    margin-top: 80px;
     width: auto;
     padding-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 425px;
+    padding-top: 337px;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
   }
 }
 
@@ -53,7 +62,8 @@
     max-width: 689px;
     margin-left: 0;
     left: -39px;
-    bottom: 134px;
+    top: 0;
+    margin-top: -190px;
   }
 }
 
@@ -62,11 +72,11 @@
   height: 240px;
 
   display: block;
-  max-width: unset;
+  max-width: none;
   background-color: $color-gray;
 
   @media (min-width: $tablet-width) {
-    width: 705px;
+    width: 697px;
     height: auto;
     background: $color-white linear-gradient(90deg, $color-gray 344px, $color-white-three 10%) 0 172px no-repeat;
   }
@@ -90,6 +100,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-bottom: 6px;
+    margin-top: 13px;
+    margin-bottom: 8px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
   }
 }
@@ -100,20 +112,21 @@
   margin-top: 22px;
   margin-left: 63px;
   margin-right: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-left: 94px;
-    margin-right: 95px;
+    margin-left: 99px;
+    margin-right: 98px;
     margin-bottom: 0;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 39px;
     margin-right: 110px;
-    padding-bottom: 48px;
+    padding-bottom: 57px;
+    margin-top: 16px;
   }
 }
 
@@ -125,7 +138,7 @@
   outline: none;
   border: 1px solid $color-pinkish-gray;
   margin-left: 20px;
-  margin-right: 11px;
+  margin-right: 16px;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -133,11 +146,14 @@
     border: none;
     background-color: $color-range;
     position: relative;
+    margin-left: 21px;
+    margin-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 24px;
     margin-right: 22px;
+    width: 427px;
   }
 }
 
@@ -179,6 +195,10 @@
     @media (min-width: $tablet-width) {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
+  }
+
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
   }
 
   &:active {

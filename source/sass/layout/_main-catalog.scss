@@ -16,11 +16,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 38px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;

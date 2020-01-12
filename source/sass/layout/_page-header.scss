@@ -1,13 +1,16 @@
 .page-header__logo-image {
+  width: 191px;
   max-width: 191px;
   height: 39px;
 
   @media (min-width: $tablet-width) {
+    width: 174px;
     max-width: 174px;
     height: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 203px;
     max-width: 203px;
   }
 }
@@ -43,6 +46,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  min-width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -65,6 +69,7 @@
       font-family: $font-stack-oswald;
       font-size: 18px;
       line-height: 25px;
+      font-weight: 400;
       color: $color-black;
       text-align: left;
     }
@@ -107,7 +112,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0 25px;
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
