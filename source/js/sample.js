@@ -2,8 +2,8 @@ var mobileWidth = 320;
 var tabletWidth = 768;
 var desktopWidth = 1300;
 var mobilePictureWidth = mobileWidth;
-var tabletPictureWidth = 705;
-var desktopPictureWidth = 689;
+var tabletPictureWidth = 690;
+var desktopPictureWidth = 690;
 var pictureWidth = mobileWidth;
 var windowW = calcScreen();
 
@@ -21,7 +21,7 @@ function calcScreen() {
   }
   else if (!(slider == null)) {
     slider.style.width = 34 +"px";
-    slider.style.left = 50 + "%";
+    slider.style.left = 51 + "%";
   }
 };
 
@@ -35,6 +35,9 @@ function initComparisons() {
   function compareImages(img) {
     var slider, img, clicked = 0, w, h;
     var sampleRange = document.querySelector('.sample__range');
+    var sartButton = document.querySelector(".sample__start");
+    var endButton = document.querySelector(".sample__end");
+
     windowW = Math.max(document.documentElement.clientWidth, window.innerWidth);
     if (windowW >= tabletWidth) pictureWidth = tabletPictureWidth;
     if (windowW >= desktopWidth) pictureWidth = desktopPictureWidth;
@@ -45,11 +48,13 @@ function initComparisons() {
     slider = document.createElement("DIV");
     slider.setAttribute("class", "sample__slider");
     slider.setAttribute("tabindex", "0");
+    slider.setAttribute("role", "button");
+    slider.setAttribute("aria-label", "Ползунок переключения фото примеров");
     if (windowW < tabletWidth) {
       slider.style.width = 50 + "%";
     }
     else {
-        slider.style.left = 50 + "%";
+        slider.style.left = 51 + "%";
     }
     sampleRange.insertBefore(slider, sampleRange.firstChild);
 
@@ -59,6 +64,8 @@ function initComparisons() {
     window.addEventListener("touchstop", slideFinish);
     window.addEventListener("resize", calcScreen);
     window.addEventListener("orientationchange", calcScreen);
+    sartButton.addEventListener("click", hideAll);
+    endButton.addEventListener("click", showAll);
 
     // calcScreen();
 
@@ -96,6 +103,14 @@ function initComparisons() {
       x = x - window.pageXOffset;
 
       return x;
+    }
+
+    function hideAll(e) {
+      slide(4);
+    }
+
+    function showAll(e) {
+      slide(w);
     }
 
     function slide(x) {

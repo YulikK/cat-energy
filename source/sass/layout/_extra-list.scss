@@ -17,7 +17,10 @@
     font-size: 16px;
     line-height: 16px;
     color: $color-black;
-    margin: 12px auto;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: 3px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -41,12 +44,12 @@
   }
 
   .button {
-    padding: 11px 73px;
-    margin-bottom: 16px;
+    padding: 10px 10px;
+    margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
       margin-top: 7px;
-      margin-bottom: 25px;
+      margin-bottom: 27px;
       margin-left: 38px;
       margin-right: 38px;
     }
@@ -68,7 +71,7 @@
 .extra-list__properties {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-top: 28px;
@@ -94,7 +97,7 @@
       width: 100%;
       display: flex;
       justify-content: flex-end;
-      padding-right: 37px;
+      padding-right: 35px;
     }
 
     @media (min-width: $desktop-width) {
@@ -149,7 +152,7 @@
 }
 
 .extra-list__item {
-  border-bottom: 1px solid $color-border-gray;
+  border-bottom: 1px solid $color-pinkish-gray;
 
   @media (min-width: $tablet-width) {
     display: flex;

@@ -99,6 +99,12 @@
         color: $color-white;
       }
     }
+
+    .site-list__item--active {
+      @media (min-width: $desktop-width) {
+        border-bottom: 2px solid $color-white;
+      }
+    }
   }
 }
 

@@ -7,7 +7,8 @@ var arrayElement = [telInput, emailInput, weightInput, nameInput];
 
 form.addEventListener("submit", function(evt){
   evt.preventDefault();
-  for (var element in arrayElement) {
+  for (var i = 0; i < arrayElement.length; i++) {
+    var element = arrayElement[i];
     if (!element.value) {
       element.classList.add("error");
       element.focus();

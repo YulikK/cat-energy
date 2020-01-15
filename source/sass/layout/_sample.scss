@@ -29,7 +29,7 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 80px;
+    margin-top: 77px;
     width: auto;
     padding-bottom: 526px;
   }
@@ -54,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
-    margin-left: -344px;
+    margin-left: -339px;
     left: 50%;
   }
 
@@ -89,6 +89,7 @@
 
 .sample__start,
 .sample__end {
+  border: none;
   font-family: $font-stack-oswald;
   font-size: 16px;
   line-height: 20px;
@@ -96,6 +97,8 @@
   text-transform: uppercase;
   display: flex;
   justify-content: end;
+  background-color: $color-gray;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -104,15 +107,46 @@
     margin-bottom: 8px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
   }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+}
+
+.sample__start {
+  margin-right: 19px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 24px;
+  }
+}
+
+.sample__end {
+  margin-left: 19px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white-three;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 21px;
+  }
 }
 
 .sample__range-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 22px;
-  margin-left: 63px;
-  margin-right: 60px;
-  padding-bottom: 20px;
+  margin-top: 39px;
+  margin-left: 64px;
+  margin-right: 59px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -137,8 +171,8 @@
   margin-bottom: auto;
   outline: none;
   border: 1px solid $color-pinkish-gray;
-  margin-left: 20px;
-  margin-right: 16px;
+  margin-left: 0;
+  margin-right: 0;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
@@ -146,13 +180,11 @@
     border: none;
     background-color: $color-range;
     position: relative;
-    margin-left: 21px;
-    margin-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 24px;
-    margin-right: 22px;
+    // margin-left: 24px;
+    // margin-right: 22px;
     width: 427px;
   }
 }

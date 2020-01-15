@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
     border-bottom: none;
+    max-width: $desktop-width;
   }
 }
 
@@ -28,7 +29,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 52px;
-    margin-left: 110px;
+    margin-left: 40px;
   }
 }
 
@@ -54,8 +55,8 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     margin-top: 72px;
-    margin-left: 110px;
-    margin-right: 104px;
+    margin-left: 40px;
+    margin-right: 35px;
   }
 }
 
