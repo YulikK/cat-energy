@@ -180,11 +180,11 @@
     border: none;
     background-color: $color-range;
     position: relative;
+    margin-left: 21px;
+    margin-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    // margin-left: 24px;
-    // margin-right: 22px;
     width: 427px;
   }
 }
