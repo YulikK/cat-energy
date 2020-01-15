@@ -50,7 +50,6 @@ function initComparisons() {
     slider.setAttribute("tabindex", "0");
     slider.setAttribute("role", "button");
     slider.setAttribute("aria-label", "Ползунок переключения фото примеров");
-
     if (windowW < tabletWidth) {
       slider.style.width = 50 + "%";
     }
