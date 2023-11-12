@@ -1,4 +1,6 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# cat-energy
+
+## Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Yulik K](https://up.htmlacademy.ru/adaptive/18/user/1150911).
 * Наставник: Мария Наг.
